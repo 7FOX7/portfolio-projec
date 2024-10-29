@@ -12,3 +12,9 @@ export type ImageProps = {
    desktopHeight: number;
    alt: string;  
 }
+
+export type Sections = {
+   id: string, 
+   name: string, 
+   value: string
+}[]
