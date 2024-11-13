@@ -14,25 +14,20 @@ const FilterLinks = ({sections}: {sections: Sections}) => {
 
    function handleClick(e: React.MouseEvent<HTMLButtonElement>) {
       const params = new URLSearchParams(searchParams)
-      try {
-         const aboutMeParams = params.get('about-me')
-         const projectsParams = params.get('projects')
+      const aboutMeParams = params.get('about-me')
+      const projectsParams = params.get('projects')
 
-         if(aboutMeParams && projectsParams) {
-            if(_aboutMeSections.includes(e.currentTarget.value)) {
-               params.set('about-me', e.currentTarget.value)
-               params.set('projects', projectsParams)   
-            }
-            else if(_projectsSections.includes(e.currentTarget.value)) {
-               params.set('projects', e.currentTarget.value)
-               params.set('about-me', aboutMeParams)
-            }
-      
-            router.replace(`${pathname}?${params}`, {scroll: false})
+      if(aboutMeParams && projectsParams) {
+         if(_aboutMeSections.includes(e.currentTarget.value)) {
+            params.set('about-me', e.currentTarget.value)
+            params.set('projects', projectsParams)   
          }
-      }
-      catch(err) {
-         throw Error('Could not filter the data: ' + err)
+         else if(_projectsSections.includes(e.currentTarget.value)) {
+            params.set('projects', e.currentTarget.value)
+            params.set('about-me', aboutMeParams)
+         }
+   
+         router.replace(`${pathname}?${params}`, {scroll: false})
       }
    }
    return (
