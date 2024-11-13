@@ -19,3 +19,22 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer base {
+  h2, 
+  h3 {
+    @apply text-primary-color; 
+    @apply font-semibold; 
+  }
+
+  h2 {
+    @apply text-4xl; 
+    @apply md:text-5xl; 
+  }
+
+  h3 {
+    @apply text-xl; 
+    @apply md:text-2xl; 
+    @apply mb-2; 
+  }
+}
