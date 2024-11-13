@@ -15,7 +15,7 @@ const FilterBox = ({sections}: {sections: Sections}) => {
 
    useEffect(() => {
       router.replace('/?about-me=education&projects=big-projects')   // navigate to the default path
-   }, [])
+   }, [router])
 
    function handleChange(e: React.ChangeEvent<HTMLSelectElement>) {
       const params = new URLSearchParams(searchParams)
