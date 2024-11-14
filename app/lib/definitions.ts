@@ -5,7 +5,7 @@ export type SpotlightProps = {
 };
 
 export type ImageProps = {
-   id?: string; 
+   id: string; 
    src: string; 
    alt: string;  
    mobileWidth: number; 
@@ -60,6 +60,6 @@ export type EducationContent = InfoContent<{id: string, title: string, descripti
 
 export type SkillsContent = InfoContent<{id: string, text: string}> & ImageProps
 
-export type ProjectsContent = InfoContent<{id: string, titleName: "Name",  name: string, images: ImageProps[], titleDescription: "Description", description: string, titleTechnologies: "Technologies", technologies: DefaultArr, titleDemonstration: "Demonstration", codeLink: TextLink, liveLink: TextLink}>[]
+export type ProjectsContent = InfoContent<{id: string, titleName: "Name:",  name: string, images: ImageProps[], titleDescription: "Description:", description: string, titleTechnologies: "Technologies:", technologies: DefaultArr, titleDemonstration: "Demonstration:", codeLink: TextLink, liveLink: TextLink}>[]
 
 export type ContactMeContent = InfoContent<{id: string, link: TextLink, icon: SocialIconProps}>[]

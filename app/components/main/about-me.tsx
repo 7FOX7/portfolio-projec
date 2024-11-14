@@ -15,7 +15,7 @@ const AboutMe = () => {
          <p className="mb-6 text-lg font-normal text-white lg:text-xl">Let me introduce myself</p>
          <Suspense fallback={<SectionContentSkeleton />}>      
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4">
-               <ImageContainer src="/author.webp" mobileWidth={310} mobileHeight={413} desktopWidth={385} desktopHeight={513} alt="Author" /> 
+               <ImageContainer id="authorImage" src="/author.webp" mobileWidth={310} mobileHeight={413} desktopWidth={385} desktopHeight={513} alt="Author" /> 
                <section>
                   <div className="block md:hidden">
                      <FilterBox sections={aboutMeSections} />

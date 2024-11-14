@@ -245,7 +245,7 @@ export const skillsContent: SkillsContent[] = [
 export const bigProjectsContent: ProjectsContent = [
    {
       id: "big-projects1", 
-      titleName: "Name", 
+      titleName: "Name:", 
       name: "7FOX7 Moto-Theme App", 
       images: [
          {
@@ -267,9 +267,9 @@ export const bigProjectsContent: ProjectsContent = [
             alt: "blue-placeholder"
          },
       ], 
-      titleDescription: "Description", 
+      titleDescription: "Description:", 
       description: "An engaging website designed for motorcycle enthusiasts! Explore a vibrant community and immerse yourself in the world of biking through crafted routes", 
-      titleTechnologies: "Technologies", 
+      titleTechnologies: "Technologies:", 
       technologies: [
          {
             id: "moto-theme-tech-1",
@@ -292,19 +292,19 @@ export const bigProjectsContent: ProjectsContent = [
             name: tech.html
          }
       ], 
-      titleDemonstration: "Demonstration", 
+      titleDemonstration: "Demonstration:", 
       codeLink: {
-         text: 'jsjsj', 
-         href: 'jjsjsjs'
+         text: 'Code', 
+         href: 'https://github.com/7FOX7/moto-project'
       }, 
       liveLink: {
-         text: 'jsjsj', 
-         href: 'jjsjsjs'
+         text: 'Live', 
+         href: 'https://7fox7-moto-website.netlify.app/'
       }
    }, 
    {
       id: "big-projects2", 
-      titleName: "Name", 
+      titleName: "Name:", 
       name: "7FOX7 Vibe Share App", 
       images: [
          {
@@ -326,9 +326,9 @@ export const bigProjectsContent: ProjectsContent = [
             alt: "gray-placeholder"
          },
       ], 
-      titleDescription: "Description", 
+      titleDescription: "Description:", 
       description: "A social media platform where users can engage with content. The main features are: publishing posts and videos and the ability to join clubs by interests", 
-      titleTechnologies: "Technologies", 
+      titleTechnologies: "Technologies:", 
       technologies: [
          {
             id: "vibe-share-tech-1",
@@ -363,19 +363,19 @@ export const bigProjectsContent: ProjectsContent = [
             name: tech.axi
          }
       ], 
-      titleDemonstration: "Demonstration", 
+      titleDemonstration: "Demonstration:", 
       codeLink: {
-         text: 'jsjsj', 
-         href: 'jjsjsjs'
+         text: 'Code', 
+         href: 'https://github.com/7FOX7/vibe-share-app-project'
       }, 
       liveLink: {
-         text: 'jsjsj', 
-         href: 'jjsjsjs'
+         text: 'Live', 
+         href: 'https://7fox7-vibe-share-app.netlify.app/'
       }
    },
    {
       id: "big-projects3", 
-      titleName: "Name", 
+      titleName: "Name:", 
       name: "7FOX7 Tinder App",
       images: [
          {
@@ -397,9 +397,9 @@ export const bigProjectsContent: ProjectsContent = [
             alt: "gray-placeholder"
          },
       ],  
-      titleDescription: "Description", 
+      titleDescription: "Description:", 
       description: "A responsive app that includes features from the original Tinder app, such as the registration process, the ability to add user images to a carousel, and the option to swipe through profiles—up for Superlike, left to Reject, and right to Like—based on whether the user is interested. Built with pure HTML/CSS and JavaScript", 
-      titleTechnologies: "Technologies", 
+      titleTechnologies: "Technologies:", 
       technologies: [
          {
             id: "tinder-app-1",
@@ -410,19 +410,19 @@ export const bigProjectsContent: ProjectsContent = [
             name: tech.js
          }, 
       ], 
-      titleDemonstration: "Demonstration", 
+      titleDemonstration: "Demonstration:", 
       codeLink: {
-         text: 'jsjsj', 
-         href: 'jjsjsjs'
+         text: 'Code', 
+         href: 'https://github.com/7FOX7/tinder-project'
       }, 
       liveLink: {
-         text: 'jsjsj', 
-         href: 'jjsjsjs'
+         text: 'Live', 
+         href: 'https://7fox7-tinder-project.netlify.app/'
       }
    }, 
    {
       id: "big-projects4", 
-      titleName: "Name", 
+      titleName: "Name:", 
       name: "7FOX7 Fetch News App", 
       images: [
          {
@@ -444,9 +444,9 @@ export const bigProjectsContent: ProjectsContent = [
             alt: "gray-placeholder"
          },
       ], 
-      titleDescription: "Description", 
+      titleDescription: "Description:", 
       description: "An application that allows users to explore content about Tigers and Sharks. Upon visiting the Welcome page, users can select their preferred animal, which leads to stories, news articles, and images. The application dynamically fetches data from an external API and features pagination for easy navigation", 
-      titleTechnologies: "Technologies", 
+      titleTechnologies: "Technologies:", 
       technologies: [
          {
             id: "fetch-news-tech-1",
@@ -469,19 +469,19 @@ export const bigProjectsContent: ProjectsContent = [
             name: tech.html
          }, 
       ], 
-      titleDemonstration: "Demonstration", 
+      titleDemonstration: "Demonstration:", 
       codeLink: {
-         text: 'jsjsj', 
-         href: 'jjsjsjs'
+         text: 'Code', 
+         href: 'https://github.com/7FOX7/fetching-news'
       }, 
       liveLink: {
-         text: 'jsjsj', 
-         href: 'jjsjsjs'
+         text: 'Live', 
+         href: 'https://fetching-news.vercel.app/selection'
       }
    }, 
    {
       id: "big-projects5", 
-      titleName: "Name", 
+      titleName: "Name:", 
       name: "7FOX7 Memory Card Game", 
       images: [
          {
@@ -503,9 +503,9 @@ export const bigProjectsContent: ProjectsContent = [
             alt: "gray-placeholder"
          },
       ], 
-      titleDescription: "Description", 
+      titleDescription: "Description:", 
       description: "A game that check user's memory. Includes 3 difficulties, the harder the difficulty, the more cards the user has to remember. The game features a nice KOF card style, background image, and soundtrack", 
-      titleTechnologies: "Technologies", 
+      titleTechnologies: "Technologies:", 
       technologies: [
          {
             id: "memory-card-game-tech-1",
@@ -524,19 +524,19 @@ export const bigProjectsContent: ProjectsContent = [
             name: tech.html
          }, 
       ], 
-      titleDemonstration: "Demonstration", 
+      titleDemonstration: "Demonstration:", 
       codeLink: {
-         text: 'jsjsj', 
-         href: 'jjsjsjs'
+         text: 'Code', 
+         href: 'https://github.com/7FOX7/memory-card-game-project'
       }, 
       liveLink: {
-         text: 'jsjsj', 
-         href: 'jjsjsjs'
+         text: 'Live', 
+         href: 'https://7fox7-memory-card-website.netlify.app/'
       }
    },
    {
       id: "big-projects6", 
-      titleName: "Name", 
+      titleName: "Name:", 
       name: "7FOX7 Movie App", 
       images: [
          {
@@ -558,9 +558,9 @@ export const bigProjectsContent: ProjectsContent = [
             alt: "gray-placeholder"
          },
       ], 
-      titleDescription: "Description", 
+      titleDescription: "Description:", 
       description: "A social media platform where users can book a film and watch movie trailers", 
-      titleTechnologies: "Technologies", 
+      titleTechnologies: "Technologies:", 
       technologies: [
          {
             id: "movie-tech-1",
@@ -583,14 +583,14 @@ export const bigProjectsContent: ProjectsContent = [
             name: tech.html
          }
       ], 
-      titleDemonstration: "Demonstration", 
+      titleDemonstration: "Demonstration:", 
       codeLink: {
-         text: 'jsjsj', 
-         href: 'jjsjsjs'
+         text: 'Code', 
+         href: 'https://github.com/7FOX7/movie-website-project'
       }, 
       liveLink: {
-         text: 'jsjsj', 
-         href: 'jjsjsjs'
+         text: 'Live', 
+         href: 'https://7fox7-movie-website.netlify.app/'
       }
    },
 ]

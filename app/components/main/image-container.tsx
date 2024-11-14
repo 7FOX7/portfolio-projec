@@ -2,6 +2,7 @@ import Image from "next/image"
 import { ImageProps } from "@/app/lib/definitions"
 
 const ImageContainer = ({
+   id,
    src, 
    alt, 
    mobileWidth, 
@@ -13,6 +14,7 @@ const ImageContainer = ({
       <figure className={`relative w-fit h-fit`}>
          <div className="absolute bg-primary-color opacity-40 w-full h-full z-30"/>
          <Image 
+            id={id}
             src={src}
             alt={alt}
             width={mobileWidth}
