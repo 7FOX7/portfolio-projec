@@ -244,7 +244,7 @@ export const skillsContent: SkillsContent[] = [
 
 export const bigProjectsContent: ProjectsContent = [
    {
-      id: "big-projects", 
+      id: "big-projects1", 
       titleName: "Name", 
       name: "7FOX7 Moto-Theme App", 
       images: [
@@ -272,23 +272,23 @@ export const bigProjectsContent: ProjectsContent = [
       titleTechnologies: "Technologies", 
       technologies: [
          {
-            id: "moto-theme-tech",
+            id: "moto-theme-tech-1",
             name: tech.react
          }, 
          {
-            id: "moto-theme-tech", 
+            id: "moto-theme-tech-2", 
             name: tech.js
          }, 
          {
-            id: "moto-theme-tech", 
+            id: "moto-theme-tech-3", 
             name: tech.mui
          }, 
          {
-            id: "moto-theme-tech", 
+            id: "moto-theme-tech-4", 
             name: tech.gsap
          }, 
          {
-            id: "moto-theme-tech", 
+            id: "moto-theme-tech-5", 
             name: tech.html
          }
       ], 
