@@ -73,3 +73,14 @@ export type CarouselProps<T> = {
    control: "swipe" | "navigation" | "pagination", 
    allowGrab: boolean
 }
+
+export type AccordionProps<T> = {
+	wrapperKey: string, 
+	values: {
+		key: string,
+		heading: string, 
+		content: T
+	}[]
+}
+
+
