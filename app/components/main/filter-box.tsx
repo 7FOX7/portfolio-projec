@@ -37,9 +37,9 @@ const FilterBox = ({sections}: {sections: Sections}) => {
    }
 
    return (
-      <select aria-label="filter-box" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" defaultValue={sections[0].value} onChange={handleChange}>
+      <select aria-label="filter-box" className="bg-transparent border-none font-semibold text-primary-color text-lg focus:ring-blue-500 w-full" defaultValue={sections[0].value} onChange={handleChange}>
          {sections.map((section) => {
-            return <option key={section.id} value={section.value}>{section.name}</option>
+            return <option key={section.id} value={section.value} className="text-black">{section.name}</option>
          })}
       </select>
    )
