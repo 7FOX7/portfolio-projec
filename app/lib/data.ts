@@ -625,7 +625,7 @@ export const contactMeContent: ContactMeContent = [
          href: 'mailto:kheeugene@gmail.com'
       }, 
       icon: {
-         network: 'mail', 
+         network: 'email', 
          label: 'Email'
       }
    }
