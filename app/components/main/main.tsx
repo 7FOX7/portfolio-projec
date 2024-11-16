@@ -5,7 +5,7 @@ import ContactMe from "./contact-me"
 
 const Main = () => {
    return (
-      <main>
+      <main className="min-w-72">
          <Spotlight fill="#00ffa7"/>
          <AboutMe />
          <Projects />
