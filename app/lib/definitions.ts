@@ -83,4 +83,8 @@ export type AccordionProps<T> = {
 	}[]
 }
 
+export type HoverLinkProps = {
+   textLink: TextLink
+}
+
 
