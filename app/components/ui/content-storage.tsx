@@ -2,10 +2,13 @@ import { educationContent } from "@/app/lib/data"
 import { generalContent } from "@/app/lib/data"
 import { skillsContent } from "@/app/lib/data"
 import { bigProjectsContent } from "@/app/lib/data"
+import { contactMeContent } from "@/app/lib/data"
 import Image from "next/image"
 import Carousel from "./carousel"
 import Link from "next/link"
 import Accordion from "./accordion"
+import HoverLink from "./hover-link"
+import Icon from "./icon"
 
 const ContentStorage = new Map() 
 
@@ -180,9 +183,24 @@ ContentStorage.set("demos", () => {
 
 ContentStorage.set("contact-me", () => {
    return (
-      <div>
-         <p>Hello from contact me</p>
-      </div>
+      <>
+         <div className="flex flex-col items-center justify-center md:hidden">
+            {contactMeContent.map((content, index) => (
+               <div key={content.id} className={`w-full flex flex-col justify-center items-center ${index !== 2 && "mb-12"}`}>
+                  <div className="w-40 h-40 rounded-2xl shadow-lg shadow-primary-color mb-6">
+                     <Icon 
+                        network={content.icon.network}
+                        label={content.icon.label}
+                     />
+                  </div>
+                  <HoverLink textLink={content.link} />
+               </div>
+            ))}
+         </div>
+         <div className="hidden md:block">
+            <p>Hello from contact me (desktop)</p>
+         </div>
+      </>
    )
 })
 
