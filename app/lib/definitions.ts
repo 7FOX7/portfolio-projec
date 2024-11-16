@@ -47,12 +47,12 @@ type DefaultArr = {
    name: string, 
 }[]
 
-export type SocialIconProps = {
-   network?: string | undefined, 
+export type IconProps = {
+   network?: string | undefined,   
    label: string
 }
 
-export type SocialIconLinkProps = SocialIconProps & IconLink
+export type SocialIconLinkProps = IconProps & IconLink
 
 export type InfoContent<T> = T
 
@@ -62,7 +62,7 @@ export type SkillsContent = InfoContent<{id: string, text: string}> & ImageProps
 
 export type ProjectsContent = InfoContent<{id: string, titleName: "Name:",  name: string, images: ImageProps[], titleDescription: "Description:", description: string, titleTechnologies: "Technologies:", technologies: DefaultArr, titleDemonstration: "Demonstration:", codeLink: TextLink, liveLink: TextLink}>[]
 
-export type ContactMeContent = InfoContent<{id: string, link: TextLink, icon: SocialIconProps}>[]
+export type ContactMeContent = InfoContent<{id: string, link: TextLink, icon: IconProps}>[]
 
 export type CarouselProps<T> = {
    // create a type for the array which will be type of a T
