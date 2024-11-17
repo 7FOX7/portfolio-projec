@@ -1,7 +1,6 @@
 import { sections } from "@/app/lib/data"
 import Image from "next/image"
 import Link from "next/link"
-import SocialIconLink from "../main/social-icon-link"
 
 export default function Footer() {
    return (
@@ -37,23 +36,6 @@ export default function Footer() {
             <div className="sm:flex sm:items-center sm:justify-between">
                <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <Link href="https://github.com/7FOX7" className="hover:underline">7FOX7</Link>. All Rights Reserved.
                </span>
-               <div className="flex mt-4 sm:justify-center sm:mt-0">
-                  <SocialIconLink
-                     url="https://github.com"
-                     href="https://github.com/7FOX7"
-                     label="GitHub account"
-                  />
-                  <SocialIconLink
-                     url="https://linkedin.com"
-                     href="https://www.linkedin.com/in/evgenii-khe-38934a318/"
-                     label="LinkedIn account"
-                  />
-                  <SocialIconLink
-                     url="email"
-                     href="mailto:kheeugene@gmail.com"
-                     label="Personal email"
-                  />
-               </div>
             </div>
          </div>
       </footer>
