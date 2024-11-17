@@ -70,7 +70,15 @@ export const sections: SectionLinks = [
    {
      id: 'contact-me',
      name: 'Contact Me', 
-     path: '#contact-me-section'
+     path: '#contact-me-section',
+     subLinks: [
+      {
+         id: 'contact-me-medias', 
+         name: 'Medias', 
+         path: '#contact-me-section', 
+         value: 'medias'
+      }
+     ]
    }
 ]
 
