@@ -78,37 +78,35 @@ ContentStorage.set("big-projects", () => {
                         />
                      </div>
                      <div>
-                        <div>
-                           <h3>{bigProject.titleDescription}</h3>
-                           <Accordion 
-                              wrapperKey={`accordion-wrapper-${bigProject.id}`} 
-                              values={[
-                              {
-                                 key: `accordion-inner-${bigProject.id}`, 
-                                 heading: "Description", 
-                                 content: 
-                                    <div className="block">
-                                       <p>{bigProject.description}</p>
-                                    </div>
-                              }, 
-                           ]}/>
-                        </div>
-                        <div>
-                           <h3>{bigProject.titleTechnologies}</h3>
-                           <div>
-                              {bigProject.technologies.map(tech => (
-                                 <div key={tech.id}>
-                                    <p>{tech.name}</p>
+                        <h3>{bigProject.titleDescription}</h3>
+                        <Accordion 
+                           wrapperKey={`accordion-wrapper-${bigProject.id}`} 
+                           values={[
+                           {
+                              key: `accordion-inner-${bigProject.id}`, 
+                              heading: "Description", 
+                              content: 
+                                 <div className="block">
+                                    <p>{bigProject.description}</p>
                                  </div>
-                              ))}
-                           </div>
-                        </div>
+                           }, 
+                        ]}/>
+                     </div>
+                     <div>
+                        <h3>{bigProject.titleTechnologies}</h3>
                         <div>
-                           <h3>{bigProject.titleDemonstration}</h3>
-                           <div className="grid grid-cols-2">
-                              <Link href={bigProject.codeLink.href} className="text-primary-color underline text-lg md:text-xl">{bigProject.codeLink.text}</Link>
-                              <Link href={bigProject.liveLink.href} className="text-primary-color underline text-lg md:text-xl">{bigProject.liveLink.text}</Link>
-                           </div>
+                           {bigProject.technologies.map(tech => (
+                              <div key={tech.id}>
+                                 <p>{tech.name}</p>
+                              </div>
+                           ))}
+                        </div>
+                     </div>
+                     <div>
+                        <h3>{bigProject.titleDemonstration}</h3>
+                        <div className="grid grid-cols-2">
+                           <HoverLink textLink={bigProject.codeLink} />
+                           <HoverLink textLink={bigProject.liveLink} />
                         </div>
                      </div>
                   </div>
@@ -142,28 +140,26 @@ ContentStorage.set("big-projects", () => {
                         />
                      </div>
                      <div>
-                        <div>
-                           <h3>{bigProject.titleDescription}</h3>
-                           <div className="block">
-                              <p>{bigProject.description}</p>
-                           </div>
+                        <h3>{bigProject.titleDescription}</h3>
+                        <div className="block">
+                           <p>{bigProject.description}</p>
                         </div>
+                     </div>
+                     <div>
+                        <h3>{bigProject.titleTechnologies}</h3>
                         <div>
-                           <h3>{bigProject.titleTechnologies}</h3>
-                           <div>
-                              {bigProject.technologies.map(tech => (
-                                 <div key={tech.id}>
-                                    <p>{tech.name}</p>
-                                 </div>
-                              ))}
-                           </div>
+                           {bigProject.technologies.map(tech => (
+                              <div key={tech.id}>
+                                 <p>{tech.name}</p>
+                              </div>
+                           ))}
                         </div>
-                        <div>
-                           <h3>{bigProject.titleDemonstration}</h3>
-                           <div className="grid grid-cols-2">
-                              <Link href={bigProject.codeLink.href} className="text-primary-color underline text-lg md:text-xl">{bigProject.codeLink.text}</Link>
-                              <Link href={bigProject.liveLink.href} className="text-primary-color underline text-lg md:text-xl">{bigProject.liveLink.text}</Link>
-                           </div>
+                     </div>
+                     <div>
+                        <h3>{bigProject.titleDemonstration}</h3>
+                        <div className="grid grid-cols-2">
+                           <HoverLink textLink={bigProject.codeLink} />
+                           <HoverLink textLink={bigProject.liveLink} />
                         </div>
                      </div>
                   </div>
