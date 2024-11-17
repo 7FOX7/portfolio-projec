@@ -598,8 +598,12 @@ export const bigProjectsContent: ProjectsContent = [
 export const contactMeContent: ContactMeContent = [
    {
       id: 'contact-me-github', 
-      link: {
+      textLink: {
          text: 'GitHub', 
+         href: 'https://github.com/7FOX7'
+      }, 
+      iconLink: {
+         url: 'https://github.com', 
          href: 'https://github.com/7FOX7'
       }, 
       icon: {
@@ -609,8 +613,12 @@ export const contactMeContent: ContactMeContent = [
    }, 
    {
       id: 'contact-me-linkedin', 
-      link: {
+      textLink: {
          text: 'LinkedIn', 
+         href: 'https://www.linkedin.com/in/evgenii-khe-38934a318/'
+      }, 
+      iconLink: {
+         url: 'https://linkedin.com', 
          href: 'https://www.linkedin.com/in/evgenii-khe-38934a318/'
       }, 
       icon: {
@@ -620,8 +628,12 @@ export const contactMeContent: ContactMeContent = [
    }, 
    {
       id: 'contact-me-email', 
-      link: {
+      textLink: {
          text: 'Email', 
+         href: 'mailto:kheeugene@gmail.com'
+      }, 
+      iconLink: {
+         url: 'email', 
          href: 'mailto:kheeugene@gmail.com'
       }, 
       icon: {
