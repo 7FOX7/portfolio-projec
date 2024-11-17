@@ -629,7 +629,7 @@ export const contactMeContent: ContactMeContent = [
       }, 
       icon: {
          network: 'github', 
-         label: 'GitHub' 
+         label: 'Contact the author via GitHub'
       }
    }, 
    {
@@ -645,7 +645,7 @@ export const contactMeContent: ContactMeContent = [
       }, 
       icon: {
          network: 'linkedin', 
-         label: 'LinkedIn'
+         label: 'Contact the author via LinkedIn'
       }
    }, 
    {
@@ -661,7 +661,7 @@ export const contactMeContent: ContactMeContent = [
       }, 
       icon: {
          network: 'email', 
-         label: 'Email'
+         label: 'Contact the author via email'
       }
    }
 ]
