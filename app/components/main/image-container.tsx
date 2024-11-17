@@ -30,7 +30,7 @@ const ImageContainer = ({
             draggable="false"
             className="relative hidden md:block z-20"
          />
-         <div className={`absolute left-10 top-6 w-full h-full border-4 border-primary-color z-10`} />
+         <div className={`absolute left-7 top-6 w-full h-full border-4 border-primary-color z-10`} />
       </figure>
    )
 }
