@@ -15,8 +15,7 @@ function Triangle<T>({items, renderedItem}: TriangleProps<T>) {
             </div>
          </div>
          <div className="shadow relative">
-            <div className="rectangle-shape animate-triangle relative w-[400px] h-[400px] 2xl:w-[450px] 2xl:h-[450px] bg-no-repeat bg-gradient-to-tr from-emerald-700 to-white after:content-[''] after:absolute after:w-full after:h-full after:bg-black after:translate-y-[2%] after:scale-90">
-            </div>
+            <div className="triangle-shape animate-triangle relative w-[400px] h-[400px] 2xl:w-[450px] 2xl:h-[450px] bg-no-repeat bg-gradient-to-tr from-emerald-700 to-white after:content-[''] after:absolute after:w-full after:h-full after:bg-black after:translate-y-[2%] after:scale-90" />
          </div>
       </div>
 	)
