@@ -303,11 +303,13 @@ export const bigProjectsContent: ProjectsContent = [
       titleDemonstration: "Demonstration:", 
       codeLink: {
          text: 'Code', 
-         href: 'https://github.com/7FOX7/moto-project'
+         href: 'https://github.com/7FOX7/moto-project', 
+         label: 'Open source code on GitHub'
       }, 
       liveLink: {
          text: 'Live', 
-         href: 'https://7fox7-moto-website.netlify.app/'
+         href: 'https://7fox7-moto-website.netlify.app/', 
+         label: 'Open live website'
       }
    }, 
    {
@@ -374,11 +376,13 @@ export const bigProjectsContent: ProjectsContent = [
       titleDemonstration: "Demonstration:", 
       codeLink: {
          text: 'Code', 
-         href: 'https://github.com/7FOX7/vibe-share-app-project'
+         href: 'https://github.com/7FOX7/vibe-share-app-project', 
+         label: 'Open source code on GitHub'
       }, 
       liveLink: {
          text: 'Live', 
-         href: 'https://7fox7-vibe-share-app.netlify.app/'
+         href: 'https://7fox7-vibe-share-app.netlify.app/', 
+         label: 'Open live website'
       }
    },
    {
@@ -421,11 +425,13 @@ export const bigProjectsContent: ProjectsContent = [
       titleDemonstration: "Demonstration:", 
       codeLink: {
          text: 'Code', 
-         href: 'https://github.com/7FOX7/tinder-project'
+         href: 'https://github.com/7FOX7/tinder-project', 
+         label: 'Open source code on GitHub'
       }, 
       liveLink: {
          text: 'Live', 
-         href: 'https://7fox7-tinder-project.netlify.app/'
+         href: 'https://7fox7-tinder-project.netlify.app/', 
+         label: 'Open live website'
       }
    }, 
    {
@@ -480,11 +486,13 @@ export const bigProjectsContent: ProjectsContent = [
       titleDemonstration: "Demonstration:", 
       codeLink: {
          text: 'Code', 
-         href: 'https://github.com/7FOX7/fetching-news'
+         href: 'https://github.com/7FOX7/fetching-news', 
+         label: 'Open source code on GitHub'
       }, 
       liveLink: {
          text: 'Live', 
-         href: 'https://fetching-news.vercel.app/selection'
+         href: 'https://fetching-news.vercel.app/selection',
+         label: 'Open live website'
       }
    }, 
    {
@@ -535,11 +543,13 @@ export const bigProjectsContent: ProjectsContent = [
       titleDemonstration: "Demonstration:", 
       codeLink: {
          text: 'Code', 
-         href: 'https://github.com/7FOX7/memory-card-game-project'
+         href: 'https://github.com/7FOX7/memory-card-game-project', 
+         label: 'Open source code on GitHub'
       }, 
       liveLink: {
          text: 'Live', 
-         href: 'https://7fox7-memory-card-website.netlify.app/'
+         href: 'https://7fox7-memory-card-website.netlify.app/', 
+         label: 'Open live website'
       }
    },
    {
@@ -594,11 +604,13 @@ export const bigProjectsContent: ProjectsContent = [
       titleDemonstration: "Demonstration:", 
       codeLink: {
          text: 'Code', 
-         href: 'https://github.com/7FOX7/movie-website-project'
+         href: 'https://github.com/7FOX7/movie-website-project', 
+         label: 'Open source code on GitHub'
       }, 
       liveLink: {
          text: 'Live', 
-         href: 'https://7fox7-movie-website.netlify.app/'
+         href: 'https://7fox7-movie-website.netlify.app/', 
+         label: 'Open live website'
       }
    },
 ]
@@ -608,7 +620,8 @@ export const contactMeContent: ContactMeContent = [
       id: 'contact-me-github', 
       textLink: {
          text: 'GitHub', 
-         href: 'https://github.com/7FOX7'
+         href: 'https://github.com/7FOX7', 
+         label: 'Contact the author via GitHub'
       }, 
       iconLink: {
          url: 'https://github.com', 
@@ -623,7 +636,8 @@ export const contactMeContent: ContactMeContent = [
       id: 'contact-me-linkedin', 
       textLink: {
          text: 'LinkedIn', 
-         href: 'https://www.linkedin.com/in/evgenii-khe-38934a318/'
+         href: 'https://www.linkedin.com/in/evgenii-khe-38934a318/', 
+         label: 'Contact the author via LinkedIn'
       }, 
       iconLink: {
          url: 'https://linkedin.com', 
@@ -638,7 +652,8 @@ export const contactMeContent: ContactMeContent = [
       id: 'contact-me-email', 
       textLink: {
          text: 'Email', 
-         href: 'mailto:kheeugene@gmail.com'
+         href: 'mailto:kheeugene@gmail.com', 
+         label: 'Contact the author via email'
       }, 
       iconLink: {
          url: 'email', 

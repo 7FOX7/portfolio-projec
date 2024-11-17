@@ -1,9 +1,9 @@
 "use client"
 
 import { useRef } from "react"
+import { useGSAP } from "@gsap/react"
 import Link from "next/link"
 import { HoverLinkProps } from "@/app/lib/definitions"
-import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 
 const HoverLink = ({textLink}: HoverLinkProps) => {
@@ -24,8 +24,8 @@ const HoverLink = ({textLink}: HoverLinkProps) => {
 
    return (
       <div className="text-primary-color text-2xl font-semibold w-fit">
-         <Link href={textLink.href} onMouseEnter={handleHover} onTouchStart={handleHover} onTouchMove={handleHover} target="_blank">{textLink.text}</Link>    
-         <div ref={underlineRef} className="h-1 bg-primary-color w-full" />     
+         <Link href={textLink.href} aria-label={textLink.label} onMouseEnter={handleHover} onTouchStart={handleHover} onTouchMove={handleHover} target="_blank">{textLink.text}</Link>    
+         <div ref={underlineRef} className="h-[3px] bg-primary-color w-full" aria-hidden={true} />     
       </div>
    )
 }

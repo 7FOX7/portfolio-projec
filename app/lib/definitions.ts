@@ -39,7 +39,8 @@ type IconLink = {
 
 type TextLink = {
    text: string,
-   href: string
+   href: string,
+   label: string
 }
 
 type DefaultArr = {
