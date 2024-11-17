@@ -4,23 +4,23 @@ import Link from "next/link"
 
 export default function Footer() {
    return (
-      <footer className="bg-white dark:bg-gray-900">
-         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <footer>
+         <div className="bg-transparent mt-52 w-full min-w-56 p-4 md:p-6 lg:p-8 justify-self-center text-primary-color ">
             <div className="md:flex md:justify-between">
                <div className="mb-6 md:mb-0">
-                  <Link href="/" className="flex items-center">
+                  <Link href="/?about-me=education&projects=big-projects" className="flex items-center">
                      <Image 
-                        width={32}
-                        height={40}
-                        src="/fox-logo.webp" className="h-8" alt="7FOX7 Logo" 
+                        width={60}
+                        height={60}
+                        src="/fox-logo.webp" alt="7FOX7 Logo" 
                      />
                   </Link>
                </div>
-               <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+               <div className="grid grid-cols-2 md:grid-cols-3 gap-8 sm:gap-6 ">
                   {sections.map((section) => (
                      <div key={section.id}>
-                        <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">{section.name}</h2>
-                        <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                        <h2 className="mb-6 text-sm font-semibold uppercase">{section.name}</h2>
+                        <ul className="text-gray-400 font-medium">
                            {section?.subLinks?.map((subLink) => (
                                  <li key={subLink.id} className="mb-4">
                                     <Link href={`${subLink.path}`} className="hover:underline">{subLink.name}</Link>
@@ -32,9 +32,9 @@ export default function Footer() {
                   ))}     
                </div>
             </div>
-            <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <div className="sm:flex sm:items-center sm:justify-between">
-               <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <Link href="https://github.com/7FOX7" className="hover:underline">7FOX7</Link>. All Rights Reserved.
+            <hr className="my-6" />
+            <div>
+               <span className="text-sm text-gray-400">© 2024 <Link href="https://github.com/7FOX7" target="_blank" className="hover:underline text-primary-color">7FOX7</Link>. All Rights Reserved.
                </span>
             </div>
          </div>
