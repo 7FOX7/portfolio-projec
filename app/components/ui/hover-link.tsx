@@ -24,7 +24,7 @@ const HoverLink = ({textLink}: HoverLinkProps) => {
 
    return (
       <div className="text-primary-color text-2xl md:text-4xl font-semibold w-fit">
-         <Link href={textLink.href} onMouseEnter={handleHover} onTouchStart={handleHover} onTouchMove={handleHover}>{textLink.text}</Link>    
+         <Link href={textLink.href} onMouseEnter={handleHover} onTouchStart={handleHover} onTouchMove={handleHover} target="_blank">{textLink.text}</Link>    
          <div ref={underlineRef} className="h-1 bg-primary-color w-full" />     
       </div>
    )
