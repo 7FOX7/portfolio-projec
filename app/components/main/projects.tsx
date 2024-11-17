@@ -12,10 +12,12 @@ const Projects = () => {
          <p className="mb-6 font-normal text-white text-xl lg:text-2xl">What have we got here</p>
          <Suspense fallback={<SectionContentSkeleton />}>      
             <section>
-               <div className="block md:hidden">
-                  <FilterBox sections={projectsSections} />
+               <div className="block md:hidden w-2/5 mt-8">
+                  <div className="w-4/4 min-w-36 max-w-36 mb-5">
+                     <FilterBox sections={projectsSections} />
+                  </div>
                </div>           
-               <div className="hidden md:block">
+               <div className="hidden md:block max-w-56 mb-2">
                   <FilterLinks sections={projectsSections} />
                </div>
                <InfoBlock type="projects" />
