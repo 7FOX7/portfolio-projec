@@ -105,7 +105,7 @@ ContentStorage.set("big-projects", () => {
                      </div>
                      <div>
                         <h3>{bigProject.titleDemonstration}</h3>
-                        <div className="grid grid-cols-2">
+                        <div className="flex justify-between w-full max-w-44">
                            <HoverLink textLink={bigProject.codeLink} />
                            <HoverLink textLink={bigProject.liveLink} />
                         </div>
@@ -158,7 +158,7 @@ ContentStorage.set("big-projects", () => {
                      </div>
                      <div>
                         <h3>{bigProject.titleDemonstration}</h3>
-                        <div className="grid grid-cols-2">
+                        <div className="flex justify-between w-full max-w-44">
                            <HoverLink textLink={bigProject.codeLink} />
                            <HoverLink textLink={bigProject.liveLink} />
                         </div>
