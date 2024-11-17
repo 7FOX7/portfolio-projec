@@ -11,8 +11,9 @@ const SocialIconLink = ({url, href, label}: SocialIconLinkProps) => {
             url={url}
             href={href}
             target="_blank"
-            className="w-[40px] h-[40px]"
+            className="!w-full !h-full hover:scale-110 transition-[1s]"
             label={label}
+            bgColor="rgba(0, 255, 167, 0.4)"
          />
       </>
    )
