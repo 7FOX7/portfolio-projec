@@ -33,7 +33,7 @@ const FilterLinks = ({sections}: {sections: Sections}) => {
    return (
       <div className="flex items-center justify-between">
          {sections.map((section) => {
-            return <button key={section.id} value={section.value} onClick={handleClick} className=" text-primary-color underline text-lg md:text-xl">{section.name}</button>
+            return <button key={section.id} value={section.value} onClick={handleClick} className=" text-primary-color underline text-lg md:text-xl hover:text-hover-color transition-[1s]">{section.name}</button>
          })}
       </div>
    )
