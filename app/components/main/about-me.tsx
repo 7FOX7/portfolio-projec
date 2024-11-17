@@ -10,7 +10,7 @@ import InfoBlock from "./info-block"
 
 const AboutMe = () => {
    return (
-      <section id="about-me-section" className="px-5 mt-14">
+      <section id="about-me-section">
          <h2 className="mb-3 leading-none tracking-tight">About Me</h2>
          <p className="mb-6 font-normal text-white text-xl lg:text-2xl">Let me introduce myself</p>
          <Suspense fallback={<SectionContentSkeleton />}>  

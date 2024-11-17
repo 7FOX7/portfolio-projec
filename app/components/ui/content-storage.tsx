@@ -16,7 +16,7 @@ const ContentStorage = new Map()
 ContentStorage.set("education", () => {
    return (
       educationContent.map((education, index, arr) => (
-         <div key={education.id} className={index !== arr.length - 1 ? `mb-5 md:mb-8`: ""}>
+         <div key={education.id} className={`${index !== arr.length - 1 ? "mb-5 md:mb-8": ""}`}>
             <h3>{education.title}</h3>
             <p>{education.description}</p>
          </div>
@@ -25,7 +25,11 @@ ContentStorage.set("education", () => {
 })
 
 ContentStorage.set("general", () => {
-   return <p>{generalContent}</p>
+   return (
+      <div>
+         <p>{generalContent}</p>
+      </div>
+   ) 
 })
 
 ContentStorage.set("skills", () => {

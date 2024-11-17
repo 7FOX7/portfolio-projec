@@ -5,10 +5,13 @@ import ContactMe from "./contact-me"
 
 const Main = () => {
    return (
-      <main className="min-w-72">
+      <main className="w-full">
          <Spotlight fill="#00ffa7"/>
+         <br />
          <AboutMe />
+         <br />
          <Projects />
+         <br />
          <ContactMe />
       </main>      
    )   

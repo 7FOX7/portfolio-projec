@@ -7,7 +7,7 @@ import InfoBlock from "./info-block"
 
 const Projects = () => {
    return (
-      <section id="projects-section" className="px-5 mt-14">
+      <section id="projects-section">
          <h2 className="mb-3 leading-none tracking-tight">Projects</h2>
          <p className="mb-6 font-normal text-white text-xl lg:text-2xl">What we've got here</p>
          <Suspense fallback={<SectionContentSkeleton />}>      
