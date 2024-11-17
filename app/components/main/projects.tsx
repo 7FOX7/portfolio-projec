@@ -1,5 +1,5 @@
 import { Suspense } from "react"
-import { SectionContentSkeleton } from "../ui/skeletons"
+import { ProjectsSkeleton } from "../ui/skeletons"
 import FilterBox from "./filter-box"
 import FilterLinks from "./filter-links"
 import { projectsSections } from "@/app/lib/data"
@@ -10,7 +10,7 @@ const Projects = () => {
       <section id="projects-section">
          <h2 className="mb-3 leading-none tracking-tight">Projects</h2>
          <p className="mb-6 font-normal text-white text-xl lg:text-2xl">What we've got here</p>
-         <Suspense fallback={<SectionContentSkeleton />}>      
+         <Suspense fallback={<ProjectsSkeleton />}>
             <section>
                <div className="block md:hidden w-2/5 mt-8">
                   <div className="w-4/4 min-w-44 max-w-44 mb-5">

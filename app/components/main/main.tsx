@@ -14,7 +14,7 @@ const Main = () => {
          <br />
          <ContactMe />
       </main>      
-   )   
+   )
 }
 
 export default Main
