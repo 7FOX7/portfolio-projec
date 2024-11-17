@@ -10,7 +10,11 @@ const Main = () => {
          <br />
          <AboutMe />
          <br />
+         <br />
+         <br />
          <Projects />
+         <br />
+         <br />
          <br />
          <ContactMe />
       </main>      
