@@ -87,4 +87,7 @@ export type HoverLinkProps = {
    textLink: TextLink
 }
 
-
+export type TriangleProps<T> = {
+	items: T[]
+	renderedItem: (item: T) => React.ReactNode
+}

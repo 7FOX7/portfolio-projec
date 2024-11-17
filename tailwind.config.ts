@@ -14,6 +14,7 @@ const config: Config = {
       },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
+        triangle: "triangle 4s cubic-bezier(0.645, 0.045, 0.355, 1) infinite alternate both running"
       },
       keyframes: {
         spotlight: {
@@ -26,6 +27,14 @@ const config: Config = {
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
+        triangle: {
+          "0%": {
+            backgroundPositionX: "100%", 
+          }, 
+          "100%": {
+            backgroundPositionX: "0%"
+          }
+        }
       },
     },
   },

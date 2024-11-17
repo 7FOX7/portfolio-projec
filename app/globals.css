@@ -30,4 +30,15 @@ body {
     @apply md:text-2xl; 
     @apply mb-2; 
   }
+
+  .shadow { 
+    filter: drop-shadow(0 0 20px #00ffa7);
+  }
+  .rectangle-shape {
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+    background-size: 400% 300%;
+    &::after {
+      clip-path: polygon(50% 0, 100% 100%, 0 100%);
+    }
+  }
 }
