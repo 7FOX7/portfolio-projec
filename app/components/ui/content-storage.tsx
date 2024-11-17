@@ -9,6 +9,8 @@ import Link from "next/link"
 import Accordion from "./accordion"
 import HoverLink from "./hover-link"
 import Icon from "./icon"
+import Triangle from "./triangle"
+import SocialIconLink from "../main/social-icon-link"
 
 const ContentStorage = new Map() 
 
@@ -43,7 +45,6 @@ ContentStorage.set("skills", () => {
          </div>
          ))}
       </div>
-      
    )
 })
 
@@ -193,12 +194,24 @@ ContentStorage.set("contact-me", () => {
                         label={content.icon.label}
                      />
                   </div>
-                  <HoverLink textLink={content.link} />
+                  <HoverLink textLink={content.textLink} />
                </div>
             ))}
          </div>
-         <div className="hidden md:block">
-            <p>Hello from contact me (desktop)</p>
+         <div className="hidden md:flex flex-col justify-center">
+            <h3>You can reach me on GitHub, LinkedIn, or Email</h3>
+            <br />
+            <Triangle items={contactMeContent} renderedItem={(content) => {
+               return (
+                  <div className="relative w-20 h-20">
+                     <SocialIconLink 
+                        url={content.iconLink.url}
+                        href={content.iconLink.href}
+                        label={content.icon.label}
+                     />
+                  </div>
+               )
+            }}/>
          </div>
       </>
    )
