@@ -37,7 +37,7 @@ const FilterBox = ({sections}: {sections: Sections}) => {
    }
 
    return (
-      <select aria-label="filter-box" className="bg-transparent border-none font-semibold text-primary-color text-lg focus:ring-blue-500 w-full" defaultValue={sections[0].value} onChange={handleChange}>
+      <select aria-label="filter box" className="bg-transparent py-2 px-4 outline-none border-none focus:ring-2 focus:ring-primary-color font-semibold text-primary-color text-xl w-full cursor-pointer" defaultValue={sections[0].value} onChange={handleChange}>
          {sections.map((section) => {
             return <option key={section.id} value={section.value} className="text-black">{section.name}</option>
          })}

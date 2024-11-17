@@ -13,7 +13,7 @@ const Projects = () => {
          <Suspense fallback={<SectionContentSkeleton />}>      
             <section>
                <div className="block md:hidden w-2/5 mt-8">
-                  <div className="w-4/4 min-w-36 max-w-36 mb-5">
+                  <div className="w-4/4 min-w-44 max-w-44 mb-5">
                      <FilterBox sections={projectsSections} />
                   </div>
                </div>           

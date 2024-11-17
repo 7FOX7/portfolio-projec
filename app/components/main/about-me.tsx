@@ -20,7 +20,7 @@ const AboutMe = () => {
                </div>
                <div className="md:col-span-5 lg:col-span-6">
                   <div className="block md:hidden w-2/5 mt-8">
-                     <div className="w-4/4 min-w-32 max-w-32 mb-5">
+                     <div className="w-4/4 min-w-40 max-w-40 mb-5">
                         <FilterBox sections={aboutMeSections} />
                      </div>  
                   </div>         
