@@ -5,7 +5,6 @@ import { bigProjectsContent } from "@/app/lib/data"
 import { contactMeContent } from "@/app/lib/data"
 import Image from "next/image"
 import Carousel from "./carousel"
-import Link from "next/link"
 import Accordion from "./accordion"
 import HoverLink from "./hover-link"
 import Icon from "./icon"
@@ -58,7 +57,7 @@ ContentStorage.set("big-projects", () => {
                control="swipe"
                allowGrab={false}
                renderedItem={(bigProject) => (
-                  <div className="grid grid-cols-1">
+                  <div className="grid grid-cols-1 gap-8">
                      <div>
                         <h3>{bigProject.titleName}</h3>
                         <p>{bigProject.name}</p>
@@ -68,12 +67,14 @@ ContentStorage.set("big-projects", () => {
                            control="navigation"
                            allowGrab={false}
                            renderedItem={(img) => (
-                              <Image 
-                                 src={img.src} 
-                                 alt={img.alt} 
-                                 width={img.mobileWidth}
-                                 height={img.mobileHeight}
-                              />
+                              <div className="mx-16">
+                                 <Image 
+                                    src={img.src} 
+                                    alt={img.alt} 
+                                    width={img.mobileWidth}
+                                    height={img.mobileHeight}
+                                 />
+                              </div>
                            )} 
                         />
                      </div>
@@ -120,7 +121,7 @@ ContentStorage.set("big-projects", () => {
                control="navigation"
                allowGrab={false}
                renderedItem={(bigProject) => (
-                  <div className="grid grid-cols-2">
+                  <div className="grid grid-cols-2 gap-8">
                      <div>
                         <h3>{bigProject.titleName}</h3>
                         <p>{bigProject.name}</p>

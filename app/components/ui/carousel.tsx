@@ -24,10 +24,11 @@ function Carousel<T>({items, keys, control, allowGrab, renderedItem}: CarouselPr
          grabCursor={allowGrab}
          slidesPerView={1} 
          simulateTouch={true}
+         spaceBetween={50}
          allowTouchMove={control === "swipe" || allowGrab ? true : false}
       >
          {items.map((item, index) => (
-            <SwiperSlide key={keys[index]}>
+            <SwiperSlide key={keys[index]} className="px-2 md:px-14 xl:px-20">
                {renderedItem(item)}
             </SwiperSlide>
          ))}

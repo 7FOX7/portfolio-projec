@@ -5,6 +5,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --swiper-navigation-color: #00ffa7;
+  --swiper-navigation-size: 35px !important; 
 }
 
 body {
@@ -40,5 +42,5 @@ body {
     &::after {
       clip-path: polygon(50% 0, 100% 100%, 0 100%);
     }
-  }
+  } 
 }
