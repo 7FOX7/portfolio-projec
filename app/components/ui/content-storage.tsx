@@ -85,7 +85,6 @@ ContentStorage.set("big-projects", () => {
                                        height={img.mobileHeight}
                                        className="w-auto h-auto"
                                        loading="lazy"
-                                       onLoad={() => console.log('image has been fully loaded')}
                                     />
                                  </Suspense>
                               </div>
