@@ -7,6 +7,7 @@ const ContactMe = () => {
       <section id="contact-me-section">
          <h2 className="mb-3 leading-none tracking-tight">Contact Me</h2>
          <p className="mb-6 font-normal text-white text-xl lg:text-2xl">Let&apos;s get in touch</p>
+         <div aria-hidden={true} className="hidden lg:block mb-8" />
          <Suspense fallback={<ContactMeSkeleton />}>      
             <InfoBlock type="contact-me" />            
          </Suspense>

@@ -11,6 +11,7 @@ const AboutMe = () => {
       <section id="about-me-section">
          <h2 className="mb-3 leading-none tracking-tight">About Me</h2>
          <p className="mb-6 font-normal text-white text-xl lg:text-2xl">Let me introduce myself</p>
+         <div aria-hidden={true} className="hidden lg:block mb-8" />
          <Suspense fallback={<AboutMeSkeleton />}>
             <div className="grid grid-cols-1 md:grid-cols-12 gap-x-8 md:gap-x-10 min-w-72 h-full ">
                <div className="flex justify-center md:justify-start md:col-span-7 lg:col-span-6 mb-12 md:mb-0 h-fit">

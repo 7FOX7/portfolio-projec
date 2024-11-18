@@ -10,6 +10,7 @@ const Projects = () => {
       <section id="projects-section">
          <h2 className="mb-3 leading-none tracking-tight">Projects</h2>
          <p className="mb-6 font-normal text-white text-xl lg:text-2xl">What we've got here</p>
+         <div aria-hidden={true} className="hidden lg:block mb-8" />
          <Suspense fallback={<ProjectsSkeleton />}>
             <section>
                <div className="block md:hidden w-2/5 mt-8">
