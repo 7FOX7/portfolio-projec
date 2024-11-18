@@ -260,21 +260,57 @@ export const bigProjectsContent: ProjectsContent = [
       images: [
          {
             id: "moto-theme-app-image-1", 
-            src: "/gray-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "gray-placeholder"
+            src: "https://utfs.io/f/4pLOQ5TaIveDqoX6ybVJDFhU1KB5EiXA3MHctugNp4mV6LGP", 
+            mobileWidth: 400, 
+            mobileHeight: 235,
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Moto theme preview image 1"
          },
          {
             id: "moto-theme-app-image-2", 
-            src: "/blue-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "blue-placeholder"
+            src: "https://utfs.io/f/4pLOQ5TaIveDRcNzSgkQ8o4Y6cgmvpWPDl3hjEwxbJNLyqaA", 
+            mobileWidth: 400, 
+            mobileHeight: 235,
+            desktopWidth: 400, 
+            desktopHeight: 200,  
+            alt: "Moto theme preview image 2"
+         },
+         {
+            id: "moto-theme-app-image-3", 
+            src: "https://utfs.io/f/4pLOQ5TaIveDFcObuhYID8MOvVXxq2AWfn6YrtQwgPy7UZSs", 
+            mobileWidth: 400, 
+            mobileHeight: 235,
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Moto theme preview image 3"
+         },
+         {
+            id: "moto-theme-app-image-4", 
+            src: "https://utfs.io/f/4pLOQ5TaIveD8gQg5J9MYjbBsrZQ6zi0ov4dT7pyWxGtN2Jc", 
+            mobileWidth: 400, 
+            mobileHeight: 235,
+            desktopWidth: 400, 
+            desktopHeight: 200,  
+            alt: "Moto theme preview image 4"
+         },
+         {
+            id: "moto-theme-app-image-5", 
+            src: "https://utfs.io/f/4pLOQ5TaIveDFdPJ8NYID8MOvVXxq2AWfn6YrtQwgPy7UZSs", 
+            mobileWidth: 400, 
+            mobileHeight: 235,
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Moto theme preview image 5"
+         },
+         {
+            id: "moto-theme-app-image-6", 
+            src: "https://utfs.io/f/4pLOQ5TaIveDaH4fQqND40b6AxRkdEX3floD1WjhwLu9gziF", 
+            mobileWidth: 400, 
+            mobileHeight: 235,
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Moto theme preview image 6"
          },
       ], 
       titleDescription: "Description:", 
@@ -321,21 +357,75 @@ export const bigProjectsContent: ProjectsContent = [
       images: [
          {
             id: "vibe-share-app-image1", 
-            src: "/blue-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "blue-placeholder"
+            src: "https://utfs.io/f/4pLOQ5TaIveDllV9wtrH6u5sfn0Jtp9WNUXkFwYv4xieMGrT", 
+            mobileWidth: 400, 
+            mobileHeight: 235,
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Vibe-share app preview image 1"
          },
          {
             id: "vibe-share-app-image2", 
-            src: "/gray-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "gray-placeholder"
+            src: "https://utfs.io/f/4pLOQ5TaIveDbMaOqKBF4drpvUyiouT09qahnH1Y26VKeCRO", 
+            mobileWidth: 400, 
+            mobileHeight: 235,
+            desktopWidth: 400, 
+            desktopHeight: 200,  
+            alt: "Vibe-share app preview image 2"
+         },
+         {
+            id: "vibe-share-app-image3", 
+            src: "https://utfs.io/f/4pLOQ5TaIveDhieHb2WJNAm01DEIrlgvWsxyueCKq8HkBwX9", 
+            mobileWidth: 400, 
+            mobileHeight: 235,
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Vibe-share app preview image 3"
+         },
+         {
+            id: "vibe-share-app-image4", 
+            src: "https://utfs.io/f/4pLOQ5TaIveD1b7TVctqtTNUBfkH7JY0dC8QMvD9gKW2Zwbu", 
+            mobileWidth: 400, 
+            mobileHeight: 235,
+            desktopWidth: 400, 
+            desktopHeight: 200,  
+            alt: "Vibe-share app preview image 4"
+         },
+         {
+            id: "vibe-share-app-image5", 
+            src: "https://utfs.io/f/4pLOQ5TaIveDKdZxnWEPfX5KQaObGmETu4vq2VJ98dYLer3D", 
+            mobileWidth: 400, 
+            mobileHeight: 235,
+            desktopWidth: 400, 
+            desktopHeight: 200,  
+            alt: "Vibe-share app preview image 5"
+         },
+         {
+            id: "vibe-share-app-image6", 
+            src: "https://utfs.io/f/4pLOQ5TaIveDz8J4q6vdD7SJ69fhmNEFWRnAlQUKViCqts3u", 
+            mobileWidth: 400, 
+            mobileHeight: 235,
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Vibe-share app preview image 6"
+         },
+         {
+            id: "vibe-share-app-image7", 
+            src: "https://utfs.io/f/4pLOQ5TaIveDoWxKyJ2R4uIcSPUFOjYKpDogbd6zBQ9wMkHT", 
+            mobileWidth: 400, 
+            mobileHeight: 235,
+            desktopWidth: 400, 
+            desktopHeight: 200,  
+            alt: "Vibe-share app preview image 7"
+         },
+         {
+            id: "vibe-share-app-image8", 
+            src: "https://utfs.io/f/4pLOQ5TaIveDSswM4Gb7FnJKiQ9vlab8fpZOdPgMyCxUzWcj", 
+            mobileWidth: 400, 
+            mobileHeight: 235,
+            desktopWidth: 400, 
+            desktopHeight: 200,  
+            alt: "Vibe-share app preview image 8"
          },
       ], 
       titleDescription: "Description:", 
@@ -394,21 +484,48 @@ export const bigProjectsContent: ProjectsContent = [
       images: [
          {
             id: "tinder-app-image1", 
-            src: "/gray-square-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "TypeScript icon"
+            src: "https://utfs.io/f/4pLOQ5TaIveDR35xKOqkQ8o4Y6cgmvpWPDl3hjEwxbJNLyqa", 
+            mobileWidth: 400, 
+            mobileHeight: 235,
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Tinder app preview image 1"
          },
          {
             id: "tinder-app-image2", 
-            src: "/gray-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "gray-placeholder"
+            src: "https://utfs.io/f/4pLOQ5TaIveDr4mChGMu5QalYMN1iTE9X6WZw0jHsBpqUxhF", 
+            mobileWidth: 400, 
+            mobileHeight: 235,
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Tinder app preview image 2"
+         },
+         {
+            id: "tinder-app-image3", 
+            src: "https://utfs.io/f/4pLOQ5TaIveDY2YPHweAi4UGwaKhT86QCEBtZzkWdgf1pLSo", 
+            mobileWidth: 400, 
+            mobileHeight: 235, 
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Tinder app preview image 3"
+         },
+         {
+            id: "tinder-app-image4", 
+            src: "https://utfs.io/f/4pLOQ5TaIveDbvQhEaSBF4drpvUyiouT09qahnH1Y26VKeCR", 
+            mobileWidth: 400, 
+            mobileHeight: 235,
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Tinder app preview image 4"
+         },
+         {
+            id: "tinder-app-image5", 
+            src: "https://utfs.io/f/4pLOQ5TaIveDtFYxcd641bkOi3IKDelnpztfgGaFsqP9oJSr", 
+            mobileWidth: 400, 
+            mobileHeight: 235, 
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Tinder app preview image 5"
          },
       ],  
       titleDescription: "Description:", 
@@ -443,21 +560,39 @@ export const bigProjectsContent: ProjectsContent = [
       images: [
          {
             id: "fetch-news-app-image1", 
-            src: "/blue-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "blue-placeholder"
+            src: "https://utfs.io/f/4pLOQ5TaIveDMIffIJoZsbotiDk8my7lupwYczM4hNe9n5rj", 
+            mobileWidth: 400, 
+            mobileHeight: 235,
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Fetch news app preview image 1"
          },
          {
             id: "fetch-news-app-image2", 
-            src: "/gray-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "gray-placeholder"
+            src: "https://utfs.io/f/4pLOQ5TaIveDRCJ5bRkQ8o4Y6cgmvpWPDl3hjEwxbJNLyqaA", 
+            mobileWidth: 400, 
+            mobileHeight: 235,
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Fetch news app preview image 2"
+         },
+         {
+            id: "fetch-news-app-image3", 
+            src: "https://utfs.io/f/4pLOQ5TaIveDjF0P7nIp1Ee0zWfZ9mPn3JvkT6FN84axgMwd", 
+            mobileWidth: 400, 
+            mobileHeight: 235,
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Fetch news app preview image 3"
+         },
+         {
+            id: "fetch-news-app-image4", 
+            src: "https://utfs.io/f/4pLOQ5TaIveDE2Rt6J1Md8je4r5M0hOfqBkTFmytui9SCD2Z", 
+            mobileWidth: 400, 
+            mobileHeight: 235,
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Fetch news app preview image 4"
          },
       ], 
       titleDescription: "Description:", 
@@ -504,21 +639,30 @@ export const bigProjectsContent: ProjectsContent = [
       images: [
          {
             id: "memory-card-game-image1", 
-            src: "/blue-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "blue-placeholder"
+            src: "https://utfs.io/f/4pLOQ5TaIveDDLjr1Epblru4VNo9tX8xTS7maAwfeqgyZcpi", 
+            mobileWidth: 400, 
+            mobileHeight: 235,
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Memory card game preview image 1"
          },
          {
             id: "memory-card-game-image2", 
-            src: "/gray-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "gray-placeholder"
+            src: "https://utfs.io/f/4pLOQ5TaIveDDvuoI6pblru4VNo9tX8xTS7maAwfeqgyZcpi", 
+            mobileWidth: 400, 
+            mobileHeight: 235,
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Memory card game preview image 1"
+         },
+         {
+            id: "memory-card-game-image3", 
+            src: "https://utfs.io/f/4pLOQ5TaIveDrLEdbxu5QalYMN1iTE9X6WZw0jHsBpqUxhFS", 
+            mobileWidth: 400, 
+            mobileHeight: 235,
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Memory card game preview image 3"
          },
       ], 
       titleDescription: "Description:", 
@@ -561,21 +705,39 @@ export const bigProjectsContent: ProjectsContent = [
       images: [
          {
             id: "movie-app-image1", 
-            src: "/blue-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "blue-placeholder"
+            src: "https://utfs.io/f/4pLOQ5TaIveDTn0WFtmh7mkA0t1sZolxVMYO6crEf5zyD8jq", 
+            mobileWidth: 400, 
+            mobileHeight: 235,
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Movie app preview image 1"
          },
          {
             id: "movie-app-image2", 
-            src: "/gray-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "gray-placeholder"
+            src: "https://utfs.io/f/4pLOQ5TaIveDApraoAigYCb1BesFJNhLTxQuK2w9ofVkDr7v", 
+            mobileWidth: 400, 
+            mobileHeight: 235,
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Movie app preview image 2"
+         },
+         {
+            id: "movie-app-image3", 
+            src: "https://utfs.io/f/4pLOQ5TaIveDa4BFsED40b6AxRkdEX3floD1WjhwLu9gziFe", 
+            mobileWidth: 400, 
+            mobileHeight: 235,
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Movie app preview image 3"
+         },
+         {
+            id: "movie-app-image4", 
+            src: "https://utfs.io/f/4pLOQ5TaIveDMGknYqoZsbotiDk8my7lupwYczM4hNe9n5rj", 
+            mobileWidth: 400, 
+            mobileHeight: 235, 
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Movie app preview image 4"
          },
       ], 
       titleDescription: "Description:", 
@@ -625,21 +787,21 @@ export const demosContent: ProjectsContent = [
       images: [
          {
             id: "contact-us-image-1", 
-            src: "/gray-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "gray-placeholder"
+            src: "https://utfs.io/f/4pLOQ5TaIveDKiYPSlEPfX5KQaObGmETu4vq2VJ98dYLer3D",
+            mobileWidth: 400, 
+            mobileHeight: 235, 
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Contact us page preview image 1"
          },
          {
             id: "contact-us-image-2", 
-            src: "/gray-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "gray-placeholder"
+            src: "https://utfs.io/f/4pLOQ5TaIveD19UlRHtqtTNUBfkH7JY0dC8QMvD9gKW2Zwbu", 
+            mobileWidth: 400, 
+            mobileHeight: 235, 
+            desktopWidth: 400, 
+            desktopHeight: 200,  
+            alt: "Contact us page preview image 2"
          }
       ], 
       titleDescription: "Description:", 
@@ -678,48 +840,48 @@ export const demosContent: ProjectsContent = [
       images: [
          {
             id: "role-based-auth-image-1", 
-            src: "/gray-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "gray-placeholder"
+            src: "https://utfs.io/f/4pLOQ5TaIveDMFi5pwoZsbotiDk8my7lupwYczM4hNe9n5rj", 
+            mobileWidth: 400, 
+            mobileHeight: 235, 
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Role-based auth app preview image 1"
          },
          {
             id: "role-based-auth-image-2", 
-            src: "/gray-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "gray-placeholder"
+            src: "https://utfs.io/f/4pLOQ5TaIveDiZ0IEERvLTnUu0p5MqHProAjN1wmE39bCBWe", 
+            mobileWidth: 400, 
+            mobileHeight: 235, 
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Role-based auth app preview image 2"
          },
          {
             id: "role-based-auth-image-3", 
-            src: "/gray-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "gray-placeholder"
+            src: "https://utfs.io/f/4pLOQ5TaIveD1WFr4PtqtTNUBfkH7JY0dC8QMvD9gKW2Zwbu", 
+            mobileWidth: 400, 
+            mobileHeight: 235, 
+            desktopWidth: 400, 
+            desktopHeight: 200,
+            alt: "Role-based auth app preview image 3"
          },
          {
             id: "role-based-auth-image-4", 
-            src: "/gray-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "gray-placeholder"
+            src: "https://utfs.io/f/4pLOQ5TaIveDtERcdsa641bkOi3IKDelnpztfgGaFsqP9oJS", 
+            mobileWidth: 400, 
+            mobileHeight: 235, 
+            desktopWidth: 400, 
+            desktopHeight: 200,
+            alt: "Role-based auth app preview image 4"
          },
          {
             id: "role-based-auth-image-5", 
-            src: "/gray-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "gray-placeholder"
+            src: "https://utfs.io/f/4pLOQ5TaIveDiJ2bj7RvLTnUu0p5MqHProAjN1wmE39bCBWe", 
+            mobileWidth: 400, 
+            mobileHeight: 235, 
+            desktopWidth: 400, 
+            desktopHeight: 200,
+            alt: "Role-based auth app preview image 5"
          },
       ], 
       titleDescription: "Description:", 
@@ -762,101 +924,43 @@ export const demosContent: ProjectsContent = [
    {
       id: "demos3", 
       titleName: "Name:", 
-      name: "Medical Form",
-      images: [
-         {
-            id: "medical-form-image-1", 
-            src: "/gray-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "gray-placeholder"
-         },
-         {
-            id: "medical-form-image-2", 
-            src: "/gray-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "gray-placeholder"
-         }, 
-         {
-            id: "medical-form-image-3", 
-            src: "/gray-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "gray-placeholder"
-         }
-      ], 
-      titleDescription: "Description:", 
-      description: "A responsive medical form which gathers user info", 
-      titleTechnologies: "Technologies:", 
-      technologies: [
-         {
-            id: "medical-form-tech-1",
-            name: tech.html
-         }, 
-         {
-            id: "medical-form-tech-2", 
-            name: tech.js
-         }, 
-      ], 
-      titleDemonstration: "Demonstration:", 
-      codeLink: {
-         text: 'Code', 
-         href: 'https://github.com/7FOX7/medical-form-project', 
-         label: 'Open source code on GitHub'
-      }, 
-      liveLink: {
-         text: 'Live', 
-         href: 'https://7fox7-medical-form.netlify.app/', 
-         label: 'Open live website'
-      }
-   }, 
-   {
-      id: "demos4", 
-      titleName: "Name:", 
       name: "Amazon App",
       images: [
          {
             id: "amazon-image-1", 
-            src: "/gray-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "gray-placeholder"
+            src: "https://utfs.io/f/4pLOQ5TaIveDE2Y9nIPMd8je4r5M0hOfqBkTFmytui9SCD2Z", 
+            mobileWidth: 400, 
+            mobileHeight: 235, 
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Amazon app preview image 1"
          },
          {
             id: "amazon-image-2", 
-            src: "/gray-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "gray-placeholder"
+            src: "https://utfs.io/f/4pLOQ5TaIveDBcGBaQzHuql5Mz7VgJThKkijS629pnd0aIbL", 
+            mobileWidth: 400, 
+            mobileHeight: 235, 
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Amazon app preview image 2"
          },
          {
             id: "amazon-image-3", 
-            src: "/gray-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "gray-placeholder"
+            src: "https://utfs.io/f/4pLOQ5TaIveDuyjF97QFoWlxLQSuNkwtEIZbMP3ROHf0iTJ2", 
+            mobileWidth: 400, 
+            mobileHeight: 235, 
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Amazon app preview image 3"
          },
          {
             id: "amazon-image-4", 
-            src: "/gray-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "gray-placeholder"
+            src: "https://utfs.io/f/4pLOQ5TaIveDK3cOFMEPfX5KQaObGmETu4vq2VJ98dYLer3D", 
+            mobileWidth: 400, 
+            mobileHeight: 235, 
+            desktopWidth: 400, 
+            desktopHeight: 200,  
+            alt: "Amazon app preview image 4"
          },
       ], 
       titleDescription: "Description:", 
@@ -885,18 +989,76 @@ export const demosContent: ProjectsContent = [
       }
    },
    {
+      id: "demos4", 
+      titleName: "Name:", 
+      name: "Medical Form",
+      images: [
+         {
+            id: "medical-form-image-1", 
+            src: "https://utfs.io/f/4pLOQ5TaIveDAM4D6nigYCb1BesFJNhLTxQuK2w9ofVkDr7v", 
+            mobileWidth: 400, 
+            mobileHeight: 235, 
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Medical form preview image 1"
+         },
+         {
+            id: "medical-form-image-2", 
+            src: "https://utfs.io/f/4pLOQ5TaIveD49Uc5vTaIveDGptcUfyl9ETRn2CZOs0qJFdQ", 
+            mobileWidth: 400, 
+            mobileHeight: 235, 
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Medical form preview image 2"
+         }, 
+         {
+            id: "medical-form-image-3", 
+            src: "https://utfs.io/f/4pLOQ5TaIveDYuc3g4eAi4UGwaKhT86QCEBtZzkWdgf1pLSo", 
+            mobileWidth: 400, 
+            mobileHeight: 235, 
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Medical form preview image 3"
+         }
+      ], 
+      titleDescription: "Description:", 
+      description: "A responsive medical form which gathers user info", 
+      titleTechnologies: "Technologies:", 
+      technologies: [
+         {
+            id: "medical-form-tech-1",
+            name: tech.html
+         }, 
+         {
+            id: "medical-form-tech-2", 
+            name: tech.js
+         }, 
+      ], 
+      titleDemonstration: "Demonstration:", 
+      codeLink: {
+         text: 'Code', 
+         href: 'https://github.com/7FOX7/medical-form-project', 
+         label: 'Open source code on GitHub'
+      }, 
+      liveLink: {
+         text: 'Live', 
+         href: 'https://7fox7-medical-form.netlify.app/', 
+         label: 'Open live website'
+      }
+   }, 
+   {
       id: "demos5", 
       titleName: "Name:", 
       name: "Resume Builder App",
       images: [
          {
             id: "resume-builder-image-1", 
-            src: "/gray-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "gray-placeholder"
+            src: "https://utfs.io/f/4pLOQ5TaIveDojHPfo2R4uIcSPUFOjYKpDogbd6zBQ9wMkHT", 
+            mobileWidth: 400, 
+            mobileHeight: 235, 
+            desktopWidth: 400, 
+            desktopHeight: 200,  
+            alt: "Resume builder app preview image 1"
          },
       ], 
       titleDescription: "Description:", 
@@ -939,30 +1101,30 @@ export const demosContent: ProjectsContent = [
       images: [
          {
             id: "patient-info-image-1", 
-            src: "/gray-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "gray-placeholder"
+            src: "https://utfs.io/f/4pLOQ5TaIveD7vg1vIxTpynAaHSfehJMZc5Rud1BD3j6NKX0", 
+            mobileWidth: 400, 
+            mobileHeight: 235, 
+            desktopWidth: 400, 
+            desktopHeight: 200, 
+            alt: "Patient info preview image 1"
          },
          {
             id: "patient-info-image-2", 
-            src: "/gray-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "gray-placeholder"
+            src: "https://utfs.io/f/4pLOQ5TaIveDX80o2AaXS3Arls4Y9OjWQztuGPU6NdJyxv7C", 
+            mobileWidth: 400, 
+            mobileHeight: 235, 
+            desktopWidth: 400, 
+            desktopHeight: 200,  
+            alt: "Patient info preview image 2"
          },
          {
             id: "patient-info-image-3", 
-            src: "/gray-placeholder.webp", 
-            mobileWidth: 90, 
-            mobileHeight: 90, 
-            desktopWidth: 90, 
-            desktopHeight: 90, 
-            alt: "gray-placeholder"
+            src: "https://utfs.io/f/4pLOQ5TaIveD5hGlKrjhxgwOY5SUHsdW0uACvq7KtJDm8Ika", 
+            mobileWidth: 400, 
+            mobileHeight: 235, 
+            desktopWidth: 400, 
+            desktopHeight: 200,  
+            alt: "Patient info preview image 3"
          },
       ], 
       titleDescription: "Description:", 

@@ -61,23 +61,26 @@ ContentStorage.set("big-projects", () => {
                keys={bigProjectsContent.map(item => item.id)}
                control="swipe"
                allowGrab={false}
+               addPadding={false}
                renderedItem={(bigProject) => (
                   <div className="grid grid-cols-1 gap-8">
                      <div>
                         <h3>{bigProject.titleName}</h3>
-                        <p>7FOX7 {bigProject.name}</p>
+                        <p>{bigProject.name}</p>
                         <Carousel 
                            items={bigProject.images} 
-                           keys={bigProjectsContent.map(item => item.id)}
+                           keys={bigProject.images.map(item => item.id)}
                            control="navigation"
                            allowGrab={false}
+                           addPadding={false}
                            renderedItem={(img) => (
-                              <div className="mx-16">
+                              <div className="mx-16 mt-10 mb-5 shadow-primary-color shadow-md">
                                  <Image 
                                     src={img.src} 
                                     alt={img.alt} 
                                     width={img.mobileWidth}
                                     height={img.mobileHeight}
+                                    className="w-auto h-auto"
                                  />
                               </div>
                            )} 
@@ -90,7 +93,7 @@ ContentStorage.set("big-projects", () => {
                            values={[
                            {
                               key: `accordion-inner-${bigProject.id}`, 
-                              heading: "Description", 
+                              heading: "If you want to know more...", 
                               content: 
                                  <div className="block">
                                     <p>{bigProject.description}</p>
@@ -125,47 +128,54 @@ ContentStorage.set("big-projects", () => {
                keys={bigProjectsContent.map(item => item.id)}
                control="navigation"
                allowGrab={false}
+               addPadding={true}
                renderedItem={(bigProject) => (
                   <div className="grid grid-cols-2 gap-8">
                      <div>
                         <h3>{bigProject.titleName}</h3>
-                        <p>7FOX7 {bigProject.name}</p>
+                        <p>{bigProject.name}</p>
                         <Carousel 
                            items={bigProject.images} 
-                           keys={bigProjectsContent.map(item => item.id)}
+                           keys={bigProject.images.map(item => item.id)}
                            control="pagination"
                            allowGrab={true}
+                           addPadding={false}
                            renderedItem={(img) => (
-                              <Image 
-                                 src={img.src} 
-                                 alt={img.alt} 
-                                 width={img.desktopWidth}
-                                 height={img.desktopHeight}
-                              />
+                              <div className="flex justify-center mt-5 mx-5 mb-5 shadow-primary-color shadow-md">
+                                 <Image 
+                                    src={img.src} 
+                                    alt={img.alt} 
+                                    width={img.desktopWidth}
+                                    height={img.desktopHeight}
+                                    className="w-full md:h-[180px] lg:h-[210px]"
+                                 />
+                              </div>
                            )} 
                         />
                      </div>
                      <div>
-                        <h3>{bigProject.titleDescription}</h3>
-                        <div className="block">
-                           <p>{bigProject.description}</p>
+                        <div>
+                           <h3>{bigProject.titleDescription}</h3>
+                           <div className="block">
+                              <p>{bigProject.description}</p>
+                           </div>
+                        </div>
+                        <div className="mt-5">
+                           <h3>{bigProject.titleDemonstration}</h3>
+                           <div className="flex justify-between w-full max-w-44">
+                              <HoverLink textLink={bigProject.codeLink} />
+                              <HoverLink textLink={bigProject.liveLink} />
+                           </div>
                         </div>
                      </div>
                      <div>
                         <h3>{bigProject.titleTechnologies}</h3>
-                        <div>
+                        <div className="flex w-full flex-wrap">
                            {bigProject.technologies.map(tech => (
-                              <div key={tech.id}>
+                              <div key={tech.id} className="mr-2">
                                  <p>{tech.name}</p>
                               </div>
                            ))}
-                        </div>
-                     </div>
-                     <div>
-                        <h3>{bigProject.titleDemonstration}</h3>
-                        <div className="flex justify-between w-full max-w-44">
-                           <HoverLink textLink={bigProject.codeLink} />
-                           <HoverLink textLink={bigProject.liveLink} />
                         </div>
                      </div>
                   </div>
@@ -185,23 +195,26 @@ ContentStorage.set("demos", () => {
                keys={demosContent.map(item => item.id)}
                control="swipe"
                allowGrab={false}
+               addPadding={true}
                renderedItem={(demo) => (
                   <div className="grid grid-cols-1 gap-8">
                      <div>
                         <h3>{demo.titleName}</h3>
-                        <p>7FOX7 {demo.name}</p>
+                        <p>{demo.name}</p>
                         <Carousel 
                            items={demo.images} 
-                           keys={bigProjectsContent.map(item => item.id)}
+                           keys={demo.images.map(item => item.id)}
                            control="navigation"
                            allowGrab={false}
+                           addPadding={true}
                            renderedItem={(img) => (
-                              <div className="mx-16">
+                              <div className="mx-16 mt-10 mb-5 shadow-primary-color shadow-md">
                                  <Image 
                                     src={img.src} 
                                     alt={img.alt} 
                                     width={img.mobileWidth}
                                     height={img.mobileHeight}
+                                    className="w-full h-[235px]"
                                  />
                               </div>
                            )} 
@@ -214,7 +227,7 @@ ContentStorage.set("demos", () => {
                            values={[
                            {
                               key: `accordion-inner-${demo.id}`, 
-                              heading: "Description", 
+                              heading: "If you want to know more...", 
                               content: 
                                  <div className="block">
                                     <p>{demo.description}</p>
@@ -249,47 +262,54 @@ ContentStorage.set("demos", () => {
                keys={demosContent.map(item => item.id)}
                control="navigation"
                allowGrab={false}
+               addPadding={true}
                renderedItem={(demo) => (
                   <div className="grid grid-cols-2 gap-8">
                      <div>
                         <h3>{demo.titleName}</h3>
-                        <p>7FOX7 {demo.name}</p>
+                        <p>{demo.name}</p>
                         <Carousel 
                            items={demo.images} 
-                           keys={bigProjectsContent.map(item => item.id)}
+                           keys={demo.images.map(item => item.id)}
                            control="pagination"
                            allowGrab={true}
+                           addPadding={false}
                            renderedItem={(img) => (
-                              <Image 
-                                 src={img.src} 
-                                 alt={img.alt} 
-                                 width={img.desktopWidth}
-                                 height={img.desktopHeight}
-                              />
+                              <div className="flex justify-center mt-5 mx-5 mb-5 shadow-primary-color shadow-md">
+                                 <Image 
+                                    src={img.src} 
+                                    alt={img.alt} 
+                                    width={img.desktopWidth}
+                                    height={img.desktopHeight}
+                                    className="w-full md:h-[180px] lg:h-[210px]"
+                                 />
+                              </div>
                            )} 
                         />
                      </div>
                      <div>
-                        <h3>{demo.titleDescription}</h3>
-                        <div className="block">
-                           <p>{demo.description}</p>
+                        <div>
+                           <h3>{demo.titleDescription}</h3>
+                           <div className="block">
+                              <p>{demo.description}</p>
+                           </div>
+                        </div>
+                        <div className="mt-5">
+                           <h3>{demo.titleDemonstration}</h3>
+                           <div className="flex justify-between w-full max-w-44">
+                              <HoverLink textLink={demo.codeLink} />
+                              <HoverLink textLink={demo.liveLink} />
+                           </div>
                         </div>
                      </div>
                      <div>
                         <h3>{demo.titleTechnologies}</h3>
-                        <div>
+                        <div className="flex w-full flex-wrap">
                            {demo.technologies.map(tech => (
-                              <div key={tech.id}>
+                              <div key={tech.id} className="mr-2">
                                  <p>{tech.name}</p>
                               </div>
                            ))}
-                        </div>
-                     </div>
-                     <div>
-                        <h3>{demo.titleDemonstration}</h3>
-                        <div className="flex justify-between w-full max-w-44">
-                           <HoverLink textLink={demo.codeLink} />
-                           <HoverLink textLink={demo.liveLink} />
                         </div>
                      </div>
                   </div>
