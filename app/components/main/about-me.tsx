@@ -23,7 +23,7 @@ const AboutMe = () => {
                         <FilterBox sections={aboutMeSections} />
                      </div>  
                   </div>         
-                  <div className="hidden md:block max-w-80 mb-2">
+                  <div className="hidden md:block max-w-72 mb-4">
                      <FilterLinks sections={aboutMeSections} />
                   </div>
                   <InfoBlock type="about-me" />

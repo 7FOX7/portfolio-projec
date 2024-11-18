@@ -18,7 +18,7 @@ const Projects = () => {
                      <FilterBox sections={projectsSections} />
                   </div>
                </div>           
-               <div className="hidden md:block max-w-56 mb-2">
+               <div className="hidden md:block max-w-52 mb-4">
                   <FilterLinks sections={projectsSections} />
                </div>
                <InfoBlock type="projects" />
