@@ -12,10 +12,6 @@ const FilterBox = ({sections}: {sections: Sections}) => {
    const pathname = usePathname()
    const router = useRouter()
 
-   // useEffect(() => {
-   //    router.replace('/?about-me=education&projects=big-projects')   // navigate to the default path
-   // }, [router])
-
    const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
       const params = new URLSearchParams(searchParams)
       const aboutMeParams = params.get('about-me')
