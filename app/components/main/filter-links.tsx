@@ -30,7 +30,7 @@ const FilterLinks = ({sections}: {sections: Sections}) => {
          router.replace(`${pathname}?${params}`, {scroll: false})
       }
    }
-   
+
    return (
       <div className="flex items-center justify-between">
          {sections.map((section) => {

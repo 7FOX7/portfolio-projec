@@ -214,7 +214,7 @@ ContentStorage.set("demos", () => {
                                     alt={img.alt} 
                                     width={img.mobileWidth}
                                     height={img.mobileHeight}
-                                    className="w-full h-[235px]"
+                                    className="w-auto h-auto"
                                  />
                               </div>
                            )} 
