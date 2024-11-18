@@ -19,7 +19,9 @@ const tech = {
    msql: "MySQL", 
    psql: "PostgreSQL", 
    axi: "axios", 
-   btrap: "Bootstrap"
+   btrap: "Bootstrap",
+   arg2: "Argon2", 
+   jwt: "JWT Token"
 }
 
 export const sections: SectionLinks = [
@@ -254,7 +256,7 @@ export const bigProjectsContent: ProjectsContent = [
    {
       id: "big-projects1", 
       titleName: "Name:", 
-      name: "7FOX7 Moto-Theme App", 
+      name: "Moto-Theme App", 
       images: [
          {
             id: "moto-theme-app-image-1", 
@@ -315,7 +317,7 @@ export const bigProjectsContent: ProjectsContent = [
    {
       id: "big-projects2", 
       titleName: "Name:", 
-      name: "7FOX7 Vibe Share App", 
+      name: "Vibe Share App", 
       images: [
          {
             id: "vibe-share-app-image1", 
@@ -388,7 +390,7 @@ export const bigProjectsContent: ProjectsContent = [
    {
       id: "big-projects3", 
       titleName: "Name:", 
-      name: "7FOX7 Tinder App",
+      name: "Tinder App",
       images: [
          {
             id: "tinder-app-image1", 
@@ -437,7 +439,7 @@ export const bigProjectsContent: ProjectsContent = [
    {
       id: "big-projects4", 
       titleName: "Name:", 
-      name: "7FOX7 Fetch News App", 
+      name: "Fetch News App", 
       images: [
          {
             id: "fetch-news-app-image1", 
@@ -498,7 +500,7 @@ export const bigProjectsContent: ProjectsContent = [
    {
       id: "big-projects5", 
       titleName: "Name:", 
-      name: "7FOX7 Memory Card Game", 
+      name: "Memory Card Game", 
       images: [
          {
             id: "memory-card-game-image1", 
@@ -555,7 +557,7 @@ export const bigProjectsContent: ProjectsContent = [
    {
       id: "big-projects6", 
       titleName: "Name:", 
-      name: "7FOX7 Movie App", 
+      name: "Movie App", 
       images: [
          {
             id: "movie-app-image1", 
@@ -613,6 +615,377 @@ export const bigProjectsContent: ProjectsContent = [
          label: 'Open live website'
       }
    },
+]
+
+export const demosContent: ProjectsContent = [
+   {
+      id: "demos1", 
+      titleName: "Name:", 
+      name: "Contact Us Page",
+      images: [
+         {
+            id: "contact-us-image-1", 
+            src: "/gray-placeholder.webp", 
+            mobileWidth: 90, 
+            mobileHeight: 90, 
+            desktopWidth: 90, 
+            desktopHeight: 90, 
+            alt: "gray-placeholder"
+         },
+         {
+            id: "contact-us-image-2", 
+            src: "/gray-placeholder.webp", 
+            mobileWidth: 90, 
+            mobileHeight: 90, 
+            desktopWidth: 90, 
+            desktopHeight: 90, 
+            alt: "gray-placeholder"
+         }
+      ], 
+      titleDescription: "Description:", 
+      description: "A fully functional 'Contact Us Form' that allows users to submit their inquiries and feedback. After successful submission, users receive a confirmation email to the address they provided, confirming that their inquiry has been received", 
+      titleTechnologies: "Technologies:", 
+      technologies: [
+         {
+            id: "contact-us-tech-1",
+            name: tech.react
+         }, 
+         {
+            id: "contact-us-tech-2", 
+            name: tech.ts
+         }, 
+         {
+            id: "contact-us-tech-3", 
+            name: tech.next
+         }, 
+      ], 
+      titleDemonstration: "Demonstration:", 
+      codeLink: {
+         text: 'Code', 
+         href: 'https://github.com/7FOX7/contact-us-page', 
+         label: 'Open source code on GitHub'
+      }, 
+      liveLink: {
+         text: 'Live', 
+         href: 'https://contact-us-page-green.vercel.app/', 
+         label: 'Open live website'
+      }
+   }, 
+   {
+      id: "demos2", 
+      titleName: "Name:", 
+      name: "Role-Based Auth App",
+      images: [
+         {
+            id: "role-based-auth-image-1", 
+            src: "/gray-placeholder.webp", 
+            mobileWidth: 90, 
+            mobileHeight: 90, 
+            desktopWidth: 90, 
+            desktopHeight: 90, 
+            alt: "gray-placeholder"
+         },
+         {
+            id: "role-based-auth-image-2", 
+            src: "/gray-placeholder.webp", 
+            mobileWidth: 90, 
+            mobileHeight: 90, 
+            desktopWidth: 90, 
+            desktopHeight: 90, 
+            alt: "gray-placeholder"
+         },
+         {
+            id: "role-based-auth-image-3", 
+            src: "/gray-placeholder.webp", 
+            mobileWidth: 90, 
+            mobileHeight: 90, 
+            desktopWidth: 90, 
+            desktopHeight: 90, 
+            alt: "gray-placeholder"
+         },
+         {
+            id: "role-based-auth-image-4", 
+            src: "/gray-placeholder.webp", 
+            mobileWidth: 90, 
+            mobileHeight: 90, 
+            desktopWidth: 90, 
+            desktopHeight: 90, 
+            alt: "gray-placeholder"
+         },
+         {
+            id: "role-based-auth-image-5", 
+            src: "/gray-placeholder.webp", 
+            mobileWidth: 90, 
+            mobileHeight: 90, 
+            desktopWidth: 90, 
+            desktopHeight: 90, 
+            alt: "gray-placeholder"
+         },
+      ], 
+      titleDescription: "Description:", 
+      description: "A Next.js app, offers a robust authentication and authorization system. Users can register and log in, with access managed by roles: admins and regular users. Key features include secure authentication, role-based access, and restricted access for regular users. Unauthenticated users are redirected to the login page when accessing protected routes", 
+      titleTechnologies: "Technologies:", 
+      technologies: [
+         {
+            id: "role-based-auth-tech-1",
+            name: tech.react
+         }, 
+         {
+            id: "role-based-auth-tech-2", 
+            name: tech.ts
+         }, 
+         {
+            id: "role-based-auth-tech-3", 
+            name: tech.jwt
+         }, 
+         {
+            id: "role-based-auth-tech-4", 
+            name: tech.twd
+         }, 
+         {
+            id: "role-based-auth-tech-5", 
+            name: tech.next
+         }
+      ], 
+      titleDemonstration: "Demonstration:", 
+      codeLink: {
+         text: 'Code', 
+         href: 'https://github.com/7FOX7/role-based-auth-project', 
+         label: 'Open source code on GitHub'
+      }, 
+      liveLink: {
+         text: 'Live', 
+         href: 'https://role-based-auth-project.vercel.app/login', 
+         label: 'Open live website'
+      }
+   }, 
+   {
+      id: "demos3", 
+      titleName: "Name:", 
+      name: "Medical Form",
+      images: [
+         {
+            id: "medical-form-image-1", 
+            src: "/gray-placeholder.webp", 
+            mobileWidth: 90, 
+            mobileHeight: 90, 
+            desktopWidth: 90, 
+            desktopHeight: 90, 
+            alt: "gray-placeholder"
+         },
+         {
+            id: "medical-form-image-2", 
+            src: "/gray-placeholder.webp", 
+            mobileWidth: 90, 
+            mobileHeight: 90, 
+            desktopWidth: 90, 
+            desktopHeight: 90, 
+            alt: "gray-placeholder"
+         }, 
+         {
+            id: "medical-form-image-3", 
+            src: "/gray-placeholder.webp", 
+            mobileWidth: 90, 
+            mobileHeight: 90, 
+            desktopWidth: 90, 
+            desktopHeight: 90, 
+            alt: "gray-placeholder"
+         }
+      ], 
+      titleDescription: "Description:", 
+      description: "A responsive medical form which gathers user info", 
+      titleTechnologies: "Technologies:", 
+      technologies: [
+         {
+            id: "medical-form-tech-1",
+            name: tech.html
+         }, 
+         {
+            id: "medical-form-tech-2", 
+            name: tech.js
+         }, 
+      ], 
+      titleDemonstration: "Demonstration:", 
+      codeLink: {
+         text: 'Code', 
+         href: 'https://github.com/7FOX7/medical-form-project', 
+         label: 'Open source code on GitHub'
+      }, 
+      liveLink: {
+         text: 'Live', 
+         href: 'https://7fox7-medical-form.netlify.app/', 
+         label: 'Open live website'
+      }
+   }, 
+   {
+      id: "demos4", 
+      titleName: "Name:", 
+      name: "Amazon App",
+      images: [
+         {
+            id: "amazon-image-1", 
+            src: "/gray-placeholder.webp", 
+            mobileWidth: 90, 
+            mobileHeight: 90, 
+            desktopWidth: 90, 
+            desktopHeight: 90, 
+            alt: "gray-placeholder"
+         },
+         {
+            id: "amazon-image-2", 
+            src: "/gray-placeholder.webp", 
+            mobileWidth: 90, 
+            mobileHeight: 90, 
+            desktopWidth: 90, 
+            desktopHeight: 90, 
+            alt: "gray-placeholder"
+         },
+         {
+            id: "amazon-image-3", 
+            src: "/gray-placeholder.webp", 
+            mobileWidth: 90, 
+            mobileHeight: 90, 
+            desktopWidth: 90, 
+            desktopHeight: 90, 
+            alt: "gray-placeholder"
+         },
+         {
+            id: "amazon-image-4", 
+            src: "/gray-placeholder.webp", 
+            mobileWidth: 90, 
+            mobileHeight: 90, 
+            desktopWidth: 90, 
+            desktopHeight: 90, 
+            alt: "gray-placeholder"
+         },
+      ], 
+      titleDescription: "Description:", 
+      description: "An e-commerce website, where a user can add items to the cart, specify the delivery date and make a payment", 
+      titleTechnologies: "Technologies:", 
+      technologies: [
+         {
+            id: "amazon-tech-1", 
+            name: tech.html
+         }, 
+         {
+            id: "amazon-tech-2", 
+            name: tech.js
+         },
+      ], 
+      titleDemonstration: "Demonstration:", 
+      codeLink: {
+         text: 'Code', 
+         href: 'https://github.com/7FOX7/amazon-project', 
+         label: 'Open source code on GitHub'
+      }, 
+      liveLink: {
+         text: 'Live', 
+         href: 'https://7fox7-amazon-project.netlify.app/', 
+         label: 'Open live website'
+      }
+   },
+   {
+      id: "demos5", 
+      titleName: "Name:", 
+      name: "Resume Builder App",
+      images: [
+         {
+            id: "resume-builder-image-1", 
+            src: "/gray-placeholder.webp", 
+            mobileWidth: 90, 
+            mobileHeight: 90, 
+            desktopWidth: 90, 
+            desktopHeight: 90, 
+            alt: "gray-placeholder"
+         },
+      ], 
+      titleDescription: "Description:", 
+      description: "A resume builder app featuring a preview, allowing a user to see how his resume will look like", 
+      titleTechnologies: "Technologies:", 
+      technologies: [
+         {
+            id: "resume-builder-tech-1",
+            name: tech.react
+         }, 
+         {
+            id: "resume-builder-tech-2", 
+            name: tech.mui
+         }, 
+         {
+            id: "resume-builder-tech-3", 
+            name: tech.html
+         }, 
+         {
+            id: "resume-builder-tech-4", 
+            name: tech.js
+         },
+      ], 
+      titleDemonstration: "Demonstration:", 
+      codeLink: {
+         text: 'Code', 
+         href: 'https://github.com/7FOX7/resume-template-project', 
+         label: 'Open source code on GitHub'
+      }, 
+      liveLink: {
+         text: 'Live', 
+         href: 'https://7fox7-resume-builder-website.netlify.app/', 
+         label: 'Open live website'
+      }
+   },
+   {
+      id: "demos6", 
+      titleName: "Name:", 
+      name: "Patient Info",
+      images: [
+         {
+            id: "patient-info-image-1", 
+            src: "/gray-placeholder.webp", 
+            mobileWidth: 90, 
+            mobileHeight: 90, 
+            desktopWidth: 90, 
+            desktopHeight: 90, 
+            alt: "gray-placeholder"
+         },
+         {
+            id: "patient-info-image-2", 
+            src: "/gray-placeholder.webp", 
+            mobileWidth: 90, 
+            mobileHeight: 90, 
+            desktopWidth: 90, 
+            desktopHeight: 90, 
+            alt: "gray-placeholder"
+         },
+         {
+            id: "patient-info-image-3", 
+            src: "/gray-placeholder.webp", 
+            mobileWidth: 90, 
+            mobileHeight: 90, 
+            desktopWidth: 90, 
+            desktopHeight: 90, 
+            alt: "gray-placeholder"
+         },
+      ], 
+      titleDescription: "Description:", 
+      description: "A responsive HTML page with appealing styling", 
+      titleTechnologies: "Technologies:", 
+      technologies: [
+         {
+            id: "patient-info-tech-1", 
+            name: tech.html
+         }, 
+      ], 
+      titleDemonstration: "Demonstration:", 
+      codeLink: {
+         text: 'Code', 
+         href: 'https://github.com/7FOX7/patient-info-project', 
+         label: 'Open source code on GitHub'
+      }, 
+      liveLink: {
+         text: 'Live', 
+         href: 'https://7fox7-patient-info.netlify.app/', 
+         label: 'Open live website'
+      }
+   }, 
 ]
 
 export const contactMeContent: ContactMeContent = [
