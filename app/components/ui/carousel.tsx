@@ -6,7 +6,7 @@ import { PaginationOptions } from "swiper/types";
 import "swiper/css"; 
 import 'swiper/css/navigation';
 
-function Carousel<T>({items, keys, control, allowGrab, renderedItem}: CarouselProps<T>) {
+function Carousel<T>({items, keys, control, allowGrab, addPadding, renderedItem}: CarouselProps<T>) {
    const options: PaginationOptions = {
       clickable: true, 
       type: 'bullets'
@@ -28,7 +28,7 @@ function Carousel<T>({items, keys, control, allowGrab, renderedItem}: CarouselPr
          allowTouchMove={control === "swipe" || allowGrab ? true : false}
       >
          {items.map((item, index) => (
-            <SwiperSlide key={keys[index]} className="px-2 md:px-14 xl:px-20">
+            <SwiperSlide key={keys[index]} className={`${addPadding ? "px-2 md:px-14 xl:px-16" : "px-0"}`}>
                {renderedItem(item)}
             </SwiperSlide>
          ))}

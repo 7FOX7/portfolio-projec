@@ -72,7 +72,8 @@ export type CarouselProps<T> = {
    // create a renderedItem prop 
    renderedItem: (item: T) => React.ReactNode,  // whatever you are passing in as an item, will end up being a React element 
    control: "swipe" | "navigation" | "pagination", 
-   allowGrab: boolean
+   allowGrab: boolean, 
+   addPadding: boolean
 }
 
 export type AccordionProps<T> = {
