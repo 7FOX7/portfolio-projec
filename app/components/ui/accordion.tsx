@@ -4,7 +4,7 @@ import { AccordionProps } from "@/app/lib/definitions"
 import { Fragment } from "react"
 import { useState } from "react"
 
-function Accordion<T>({wrapperKey, values}: AccordionProps<React.ReactNode>) { // type will be determined on the fly (based on what type the 'values' will have)
+function Accordion({wrapperKey, values}: AccordionProps<React.ReactNode>) { // type will be determined on the fly (based on what type the 'values' will have)
    const [isVisible, setIsVisible] = useState(false); 
    return (
       <div key={wrapperKey} data-accordion="collapse" className="text-primary-color">

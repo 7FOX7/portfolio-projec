@@ -9,7 +9,7 @@ const Projects = () => {
    return (
       <section id="projects-section">
          <h2 className="mb-3 leading-none tracking-tight">Projects</h2>
-         <p className="mb-6 font-normal text-white text-xl lg:text-2xl">What we've got here</p>
+         <p className="mb-6 font-normal text-white text-xl lg:text-2xl">What we&apos;ve got here</p>
          <div aria-hidden={true} className="hidden lg:block mb-8" />
          <Suspense fallback={<ProjectsSkeleton />}>
             <section>

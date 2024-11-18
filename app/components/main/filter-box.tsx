@@ -4,7 +4,6 @@ import { useSearchParams } from "next/navigation"
 import { usePathname } from "next/navigation"  
 import { useRouter } from "next/navigation"
 import { useEffect } from "react"
-import { useCallback } from "react"
 import { Sections } from "@/app/lib/definitions"
 import { _aboutMeSections } from "@/app/lib/data"
 import { _projectsSections } from "@/app/lib/data"
@@ -20,7 +19,7 @@ const FilterBox = ({sections}: {sections: Sections}) => {
       router.replace('/?about-me=education&projects=big-projects')   // navigate to the default path
    }, [router])
 
-   const handleChange = useCallback((e: React.ChangeEvent<HTMLSelectElement>) => {
+   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
       const params = new URLSearchParams(searchParams)
       const aboutMeParams = params.get('about-me')
       const projectsParams = params.get('projects')
@@ -37,7 +36,7 @@ const FilterBox = ({sections}: {sections: Sections}) => {
    
          router.replace(`${pathname}?${params}`, {scroll: false})
       }
-   }, [router])
+   }
 
    return (
       <select aria-label="filter box" className="bg-transparent py-2 px-4 outline-none border-none focus:ring-2 focus:ring-primary-color font-semibold text-primary-color text-xl w-full cursor-pointer" defaultValue={sections[0].value} onChange={handleChange}>
