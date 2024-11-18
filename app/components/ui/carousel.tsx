@@ -18,7 +18,7 @@ function Carousel<T>({items, keys, control, allowGrab, addPadding, renderedItem}
          pagination={control === "pagination" && options}
          autoplay={{
             delay: 8000, 
-            disableOnInteraction: false
+            disableOnInteraction: true
          }}
          loop={true}
          grabCursor={allowGrab}
