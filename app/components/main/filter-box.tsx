@@ -3,7 +3,6 @@
 import { useSearchParams } from "next/navigation"
 import { usePathname } from "next/navigation"  
 import { useRouter } from "next/navigation"
-import { useEffect } from "react"
 import { Sections } from "@/app/lib/definitions"
 import { _aboutMeSections } from "@/app/lib/data"
 import { _projectsSections } from "@/app/lib/data"
@@ -13,9 +12,9 @@ const FilterBox = ({sections}: {sections: Sections}) => {
    const pathname = usePathname()
    const router = useRouter()
 
-   useEffect(() => {
-      router.replace('/?about-me=education&projects=big-projects')   // navigate to the default path
-   }, [router])
+   // useEffect(() => {
+   //    router.replace('/?about-me=education&projects=big-projects')   // navigate to the default path
+   // }, [router])
 
    const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
       const params = new URLSearchParams(searchParams)

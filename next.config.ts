@@ -11,7 +11,8 @@ const nextConfig: NextConfig = {
         pathname: "/**"
       }
     ]
-  }
+  }, 
+  basePath: "/?about-me=education&projects=big-projects"
 };
 
 export default nextConfig;
