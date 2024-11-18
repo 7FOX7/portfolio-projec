@@ -8,7 +8,7 @@ import Image from "next/image"
 import Carousel from "./carousel"
 import Accordion from "./accordion"
 import HoverLink from "./hover-link"
-import Icon from "./icon"
+import Icon from "./custom-icon"
 import Triangle from "./triangle"
 import SocialIconLink from "../main/social-icon-link"
 
