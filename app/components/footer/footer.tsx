@@ -8,7 +8,7 @@ export default function Footer() {
          <div className="bg-transparent mt-52 w-full min-w-56 p-4 md:p-6 lg:p-8 justify-self-center text-primary-color ">
             <div className="md:flex md:justify-between">
                <div className="mb-6 md:mb-0">
-                  <Link href="/?about-me=education&projects=big-projects" className="flex items-center">
+                  <Link href="/" className="flex items-center">
                      <Image 
                         width={60}
                         height={60}
@@ -23,7 +23,7 @@ export default function Footer() {
                         <ul className="text-gray-400 font-medium">
                            {section?.subLinks?.map((subLink) => (
                                  <li key={subLink.id} className="mb-4">
-                                    <Link href={`${subLink.path}`} className="hover:underline">{subLink.name}</Link>
+                                    <Link href={`/${subLink.path}`} className="hover:underline">{subLink.name}</Link>
                                  </li>
                               )
                            )}

@@ -11,7 +11,7 @@ export default function Header() {
 	<header>
 		<nav className="bg-transparent text-primary-color text-lg">
 		<div className="min-w-36 flex flex-wrap items-center justify-between p-4 md:p-6 lg:p-8">
-			<Link href="/?about-me=education&projects=big-projects" className="flex items-center">
+			<Link href="/" className="flex items-center">
 				<Image 
 					width={60}
 					height={60}
@@ -30,7 +30,7 @@ export default function Header() {
 				{
 					sections.map((section) => (
 						<li key={section.id}>
-						<Link href={section.path} 
+						<Link href={`/${section.path}`} 
 							className="block py-2 px-3 rounded hover:hover-color md:border-0 md:hover:text-hover-color md:p-0">
 							{section.name}
 						</Link>

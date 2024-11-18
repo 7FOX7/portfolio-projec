@@ -12,7 +12,26 @@ const nextConfig: NextConfig = {
       }
     ]
   }, 
-  basePath: "/?about-me=education&projects=big-projects"
+  
+  async redirects() {
+    return [
+      {
+        source: '/',
+        missing: [
+          {
+            type: 'query', 
+            key: 'about-me'
+          }, 
+          {
+            type: 'query', 
+            key: 'projects'
+          }
+        ], 
+        destination: '/?about-me=education&projects=big-projects', 
+        permanent: true
+      }
+    ]
+  }, 
 };
 
 export default nextConfig;
