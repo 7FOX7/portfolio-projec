@@ -1,23 +1,25 @@
+"use client"
+
 import { AccordionProps } from "@/app/lib/definitions"
 import { Fragment } from "react"
+import { useState } from "react"
 
 function Accordion<T>({wrapperKey, values}: AccordionProps<React.ReactNode>) { // type will be determined on the fly (based on what type the 'values' will have)
+   const [isVisible, setIsVisible] = useState(false); 
    return (
-      <div key={wrapperKey} data-accordion="collapse">
+      <div key={wrapperKey} data-accordion="collapse" className="text-primary-color">
          {values.map((value, index) => (
             <Fragment key={value.key}>
-               <h2 key={`accordion-open-heading-${index}`} id={`accordion-open-heading-${index}`}>
-                  <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-open-body-1" aria-expanded="true" aria-controls={`accordion-open-body-${index}`}>
-                     <span className="flex items-center"><svg className="w-5 h-5 me-2 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd"></path></svg>{value.heading}</span>
-                     <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-label="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+               <h4 id={`accordion-open-heading-${index}`}>
+                  <button type="button" className="flex items-center justify-between w-full p-5 border-2 border-gray-200 rounded-t-xl hover:bg-gray-600" data-accordion-target={`accordion-open-body-${index}`} aria-expanded={isVisible} aria-controls={`accordion-open-body-${index}`} onClick={() => setIsVisible((prev) => !prev)}>
+                     <span>{value.heading}</span>
+                     <svg data-accordion-icon className={`w-3 h-3 ${isVisible ? "rotate-0" : "rotate-180"} shrink-0`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
                      </svg>
                   </button>
-               </h2>
-               <div key={`accordion-open-body-${index}`} id={`accordion-open-body-${index}`} className="hidden" aria-labelledby={`accordion-open-heading-${index}`}>
-                  <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                     {value.content}
-                  </div>
+               </h4>
+               <div key={`accordion-open-body-${index}`} id={`accordion-open-body-${index}`} aria-labelledby={`accordion-open-heading-${index}`} className={`${isVisible ? "block" : "hidden"} text-white mx-1 p-5 border-2 border-t-0 border-primary-color`}>
+                  {value.content}
                </div>
             </Fragment>
          ))}         
