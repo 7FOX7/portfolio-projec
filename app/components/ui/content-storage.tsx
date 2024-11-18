@@ -1,3 +1,5 @@
+import { Suspense } from "react"
+import { ImageSkeleton } from "./skeletons"
 import { educationContent } from "@/app/lib/data"
 import { generalContent } from "@/app/lib/data"
 import { skillsContent } from "@/app/lib/data"
@@ -75,13 +77,17 @@ ContentStorage.set("big-projects", () => {
                            addPadding={false}
                            renderedItem={(img) => (
                               <div className="mx-16 mt-10 mb-5 shadow-primary-color shadow-md">
-                                 <Image 
-                                    src={img.src} 
-                                    alt={img.alt} 
-                                    width={img.mobileWidth}
-                                    height={img.mobileHeight}
-                                    className="w-auto h-auto"
-                                 />
+                                 <Suspense fallback={<ImageSkeleton />}>
+                                    <Image 
+                                       src={img.src} 
+                                       alt={img.alt} 
+                                       width={img.mobileWidth}
+                                       height={img.mobileHeight}
+                                       className="w-auto h-auto"
+                                       loading="lazy"
+                                       onLoad={() => console.log('image has been fully loaded')}
+                                    />
+                                 </Suspense>
                               </div>
                            )} 
                         />
@@ -142,13 +148,16 @@ ContentStorage.set("big-projects", () => {
                            addPadding={false}
                            renderedItem={(img) => (
                               <div className="flex justify-center mt-5 mx-10 mb-5 shadow-primary-color shadow-md">
-                                 <Image 
-                                    src={img.src} 
-                                    alt={img.alt} 
-                                    width={img.desktopWidth}
-                                    height={img.desktopHeight}
-                                    className="w-full md:h-[180px] lg:h-[210px]"
-                                 />
+                                 <Suspense fallback={<ImageSkeleton />}>
+                                    <Image 
+                                       src={img.src} 
+                                       alt={img.alt} 
+                                       width={img.desktopWidth}
+                                       height={img.desktopHeight}
+                                       className="w-full md:h-[180px] lg:h-[210px]"
+                                       loading="lazy"
+                                    />
+                                 </Suspense>
                               </div>
                            )} 
                         />
@@ -182,6 +191,7 @@ ContentStorage.set("big-projects", () => {
                )} 
             />
          </div>
+         
       </>
    )
 })
@@ -208,15 +218,18 @@ ContentStorage.set("demos", () => {
                            allowGrab={false}
                            addPadding={true}
                            renderedItem={(img) => (
-                              <div className="mx-16 mt-10 mb-5 shadow-primary-color shadow-md">
-                                 <Image 
-                                    src={img.src} 
-                                    alt={img.alt} 
-                                    width={img.mobileWidth}
-                                    height={img.mobileHeight}
-                                    className="w-auto h-auto"
-                                 />
-                              </div>
+                                 <div className="mx-16 mt-10 mb-5 shadow-primary-color shadow-md">
+                                    <Suspense fallback={<ImageSkeleton />}>
+                                    <Image 
+                                       src={img.src} 
+                                       alt={img.alt} 
+                                       width={img.mobileWidth}
+                                       height={img.mobileHeight}
+                                       className="w-auto h-auto"
+                                       loading="lazy"
+                                    />
+                                    </Suspense>
+                                 </div>
                            )} 
                         />
                      </div>
@@ -275,15 +288,18 @@ ContentStorage.set("demos", () => {
                            allowGrab={true}
                            addPadding={false}
                            renderedItem={(img) => (
-                              <div className="flex justify-center mt-5 mx-5 mb-5 shadow-primary-color shadow-md">
-                                 <Image 
-                                    src={img.src} 
-                                    alt={img.alt} 
-                                    width={img.desktopWidth}
-                                    height={img.desktopHeight}
-                                    className="w-full md:h-[180px] lg:h-[210px]"
-                                 />
-                              </div>
+                                 <div className="flex justify-center mt-5 mx-5 mb-5 shadow-primary-color shadow-md">
+                                    <Suspense fallback={<ImageSkeleton />}>
+                                    <Image 
+                                       src={img.src} 
+                                       alt={img.alt} 
+                                       width={img.desktopWidth}
+                                       height={img.desktopHeight}
+                                       className="w-full md:h-[180px] lg:h-[210px]"
+                                       loading="lazy"
+                                    />
+                                    </Suspense>
+                                 </div>
                            )} 
                         />
                      </div>
