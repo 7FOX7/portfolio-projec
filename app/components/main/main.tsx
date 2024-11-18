@@ -12,10 +12,16 @@ const Main = () => {
          <br />
          <br />
          <br />
+         <div aria-hidden={true} className="hidden lg:block">
+            <br />
+         </div>
          <Projects />
          <br />
          <br />
          <br />
+         <div aria-hidden={true} className="hidden lg:block">
+            <br />
+         </div>
          <ContactMe />
       </main>      
    )
