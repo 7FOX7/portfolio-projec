@@ -3,6 +3,7 @@
 import { useSearchParams } from "next/navigation"
 import { usePathname } from "next/navigation"
 import { useRouter } from "next/navigation"
+import { useCallback } from "react"
 import { Sections } from "@/app/lib/definitions"
 import { _aboutMeSections } from "@/app/lib/data"
 import { _projectsSections } from "@/app/lib/data"
@@ -12,7 +13,7 @@ const FilterLinks = ({sections}: {sections: Sections}) => {
    const router = useRouter()
    const pathname = usePathname()
 
-   function handleClick(e: React.MouseEvent<HTMLButtonElement>) {
+   const handleClick = useCallback((e: React.MouseEvent<HTMLButtonElement>) => {
       const params = new URLSearchParams(searchParams)
       const aboutMeParams = params.get('about-me')
       const projectsParams = params.get('projects')
@@ -29,7 +30,7 @@ const FilterLinks = ({sections}: {sections: Sections}) => {
    
          router.replace(`${pathname}?${params}`, {scroll: false})
       }
-   }
+   }, [router])
    return (
       <div className="flex items-center justify-between">
          {sections.map((section) => {

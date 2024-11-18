@@ -1,15 +1,16 @@
 import Image from "next/image"
 import { ImageProps } from "@/app/lib/definitions"
+import { memo } from "react"
 
-const ImageContainer = ({
-   id,
+const ImageContainer = memo(function ImageContainer({
+   id, 
    src, 
    alt, 
    mobileWidth, 
    mobileHeight, 
    desktopWidth, 
-   desktopHeight, 
-}: ImageProps) => {
+   desktopHeight
+}: ImageProps) {
    return (
       <figure className={`relative w-fit h-fit`}>
          <div className="absolute bg-primary-color opacity-40 w-full h-full z-30"/>
@@ -33,6 +34,6 @@ const ImageContainer = ({
          <div className={`absolute left-7 top-6 w-full h-full border-4 border-primary-color z-10`} />
       </figure>
    )
-}
+})
 
 export default ImageContainer
