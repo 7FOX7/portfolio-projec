@@ -141,7 +141,7 @@ ContentStorage.set("big-projects", () => {
                            allowGrab={true}
                            addPadding={false}
                            renderedItem={(img) => (
-                              <div className="flex justify-center mt-5 mx-5 mb-5 shadow-primary-color shadow-md">
+                              <div className="flex justify-center mt-5 mx-10 mb-5 shadow-primary-color shadow-md">
                                  <Image 
                                     src={img.src} 
                                     alt={img.alt} 
